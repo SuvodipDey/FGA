@@ -1,0 +1,82 @@
+Dialogue ID : SNG01262.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a place to stay. The hotel should include free wifi and should include free parking
+
+GT  : {'hotel': {'internet': 'yes', 'parking': 'yes'}}
+PR  : {'hotel': {'internet': 'yes', 'parking': 'yes'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are many results with free wifi and parking, to help narrow it down, what area do you want to stay in?
+Usr : north area in a guesthouse
+
+GT  : {'hotel': {'area': 'north', 'internet': 'yes', 'parking': 'yes', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'internet': 'yes', 'parking': 'yes', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : what star rating?
+Usr : It doesn't matter as long as I can book it for 2 people and 2 nights starting Thursday.
+
+GT  : {'hotel': {'area': 'north', 'internet': 'yes', 'parking': 'yes', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '2', 'stay': '2', 'internet': 'yes', 'parking': 'yes', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Did you have a price range in mind?
+Usr : No, I am not picky.
+
+GT  : {'hotel': {'area': 'north', 'day': 'tuesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '2', 'stay': '2', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Booking was not successful for that night at the acorn guest house, would you like me to try a different place?
+Usr : how about wednesday instead?
+
+GT  : {'hotel': {'area': 'north', 'day': 'wednesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'wednesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Booking was unsuccessful. Would you like to try a different location?
+Usr : Yeah try a different place. Anywhere that meets my requirements
+
+GT  : {'hotel': {'area': 'north', 'day': 'wednesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'name': 'dontcare', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'wednesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I'm going to try for the Arbury Lodge Guesthouse, sir. Is that all right?
+Usr : Yes please try it.
+
+GT  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '2', 'stay': '2', 'internet': 'yes', 'name': 'arbury lodge guesthouse', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'wednesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'name': 'arbury lodge guesthouse', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : I was able to book the Arbury Lodge Guesthouse on Thursday for 2 nights for two people and your reference number is K9ZNS97G. Is there anything else you need?
+Usr : That was everything, thanks.
+
+GT  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '2', 'stay': '2', 'internet': 'yes', 'name': 'arbury lodge guesthouse', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'wednesday', 'people': '2', 'stay': '2', 'internet': 'yes', 'name': 'arbury lodge guesthouse', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------

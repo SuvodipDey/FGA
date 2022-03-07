@@ -1,0 +1,102 @@
+Dialogue ID : PMUL1420.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need a train leaving from london kings cross.
+
+GT  : {'train': {'departure': 'london kings cross'}}
+PR  : {'train': {'departure': 'london kings cross'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I can help you with that what day are you wanting to leave?
+Usr : I want to leave on a Tuesday.
+
+GT  : {'train': {'day': 'tuesday', 'departure': 'london kings cross'}}
+PR  : {'train': {'day': 'tuesday', 'departure': 'london kings cross'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Where will you be travelling to?
+Usr : I will be traveling to cambridge.
+
+GT  : {'train': {'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'train': {'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : What time do you need to depart?
+Usr : whatever time that will get me there closest to 14:00.
+
+GT  : {'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : TR7850 leaves Tuesday at 11:17 and arrives at 12:08. Will this one work for you?
+Usr : Yes, that would work great.  What is the price per ticket for that train?
+
+GT  : {'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : The tickets are 23.60 GBP each.
+Usr : i am also looking for a place to go in town
+
+GT  : {'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : What type of place would you like to visit?
+Usr : I'd like to visit a college in the south.
+
+GT  : {'attraction': {'area': 'south', 'type': 'college'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'south', 'type': 'college'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : Unfortunately, I don't have any colleges located in that area. Can I try a different area or attraction type?
+Usr : Yes, can you look for a theatre in the south?
+
+GT  : {'attraction': {'area': 'south', 'type': 'theatre'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'south', 'type': 'theatre'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 8
+Sys : I have the junction theatre in the south located on clifton way.
+Usr : Could I have their phone number and address please?
+
+GT  : {'attraction': {'area': 'south', 'name': 'the junction', 'type': 'theatre'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'south', 'name': 'the junction', 'type': 'theatre'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 9
+Sys : Yes the Junction Theater's address is Clifton Way and their telephone number is 01223511511.
+Usr : Thank you for the help, that is all I need for today.
+
+GT  : {'attraction': {'area': 'south', 'name': 'the junction', 'type': 'theatre'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'south', 'name': 'the junction', 'type': 'theatre'}, 'train': {'arriveby': '14:00', 'day': 'tuesday', 'departure': 'london kings cross', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------

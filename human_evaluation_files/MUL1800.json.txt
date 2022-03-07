@@ -1,0 +1,82 @@
+Dialogue ID : MUL1800.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need a train that is departing from cambridge and should leave on sunday.
+
+GT  : {'train': {'day': 'sunday', 'departure': 'cambridge'}}
+PR  : {'train': {'day': 'sunday', 'departure': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Where will you be going?
+Usr : I will be going to ely and I would like it to arrive by 11:45.
+
+GT  : {'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Train TR2475 leaves at 07:50 and arrives by 08:07 on Sunday. Would you like to book this now?
+Usr : Could I have the price for that train please?
+
+GT  : {'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : They are 3.52 pounds each
+Usr : Yes could you book that for me?
+
+GT  : {'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Yes, I can book that for you.  Can I confirm that this is for one person, or do you need more than one ticket?
+Usr : Please. I am also looking for a museum in the east please.
+
+GT  : {'attraction': {'area': 'east', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'attraction': {'area': 'east', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : In the east we have four museums cambridge artworks, cambridge museum of technology, gallery at twelve a high street and saint barnabas press gallery.
+Usr : Could you tell me the entrance fee and address for the Cambridge Museum of Technology?
+
+GT  : {'attraction': {'area': 'east', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : the entrance fee for cambridge museum of technology is 5 pounds.  shall I get tickets for you if so how many?
+Usr : That won't be necessary. Can you tell me the postcode for the museum?
+
+GT  : {'attraction': {'area': 'east', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : The postcode is cb58ld. Is there anything else I can help you with?
+Usr : No thank you, that will be all.
+
+GT  : {'attraction': {'area': 'east', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '11:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'ely'}}
+
+Matched : False
+
+----------------------

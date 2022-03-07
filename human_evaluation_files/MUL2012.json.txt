@@ -1,0 +1,112 @@
+Dialogue ID : MUL2012.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am trying to find out about trains that arrive in Cambridge
+
+GT  : {'train': {'destination': 'cambridge'}}
+PR  : {'train': {'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are quite a few trains coming into Cambridge. Where will you be departing from?
+Usr : I want to arrive by 16:15
+
+GT  : {'train': {'arriveby': '16:15', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '16:15', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Okay. First, let's find out you're departing from.
+Usr : I will be departing from stevenage and going to cambridge.
+
+GT  : {'train': {'arriveby': '16:15', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '16:15', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : There's a train running every day leaving at 13:54 and arriving at 14:43. Did you have a particular day in mind?
+Usr : I am looking to travel on Monday.
+
+GT  : {'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The latest train arrives by 14:43 would you like me to book that for you?
+Usr : That should work! I will also need a place to stay. I am looking for a guesthouse in the centre of town, in the expensive range. It should include free wifi as well.
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'pricerange': 'expensive', 'type': 'guest house'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'pricerange': 'expensive', 'type': 'guest house'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I am terribly sorry no guesthouses are available, how about a hotel stay instead?
+Usr : Sure, let's look at hotels instead, then.
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : I found two hotels do you want the detail information for the hotels?
+Usr : Do either of them have free parking included?
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : Yes, they both offer free parking.
+Usr : Could you provide the details?
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 8
+Sys : The Gonville Hotel is on Gonville Place and is rated 3 stars. The University Arms Hotel is 4 stars and it's on Regent Street. Would you like to book a room?
+Usr : Yes, this seems alright. Go ahead and book it.
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'name': 'gonville hotel', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : Will you be needing the room for Monday?
+Usr : No, actually, I'm not ready to book yet.  That is all I need for today.  Thanks.  Bye.
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'name': 'university arms hotel', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'name': 'gonville hotel', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 10
+Sys : Their phone number is 01223351241 if you would like to book later.
+Usr : Thank you.  I will call back when I am ready to finish my booking.
+
+GT  : {'hotel': {'area': 'centre', 'internet': 'yes', 'name': 'university arms hotel', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'centre', 'internet': 'yes', 'name': 'gonville hotel', 'parking': 'yes', 'pricerange': 'expensive', 'type': 'hotel'}, 'train': {'arriveby': '16:15', 'day': 'monday', 'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

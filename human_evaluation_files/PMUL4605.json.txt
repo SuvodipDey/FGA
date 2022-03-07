@@ -1,0 +1,72 @@
+Dialogue ID : PMUL4605.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I'm looking for a hotel by the name of Acorn Guest House.
+
+GT  : {'hotel': {'name': 'acorn guest house'}}
+PR  : {'hotel': {'name': 'acorn guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure, what would you like to know about it?
+Usr : I would like to know if it is available for 8 people for 4 nights starting Saturday
+
+GT  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Booking was successful. Reference number is : ZZPP7K9D. Is there anything else I can help you with today?
+Usr : Thank you. I now need help with a train from Cambridge to birmingham new street, please.
+
+GT  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'departure': 'cambridge', 'destination': 'birmingham new street'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'departure': 'cambridge', 'destination': 'birmingham new street'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Absolutely. What day would you like, and when would you like to depart?
+Usr : The train should leave after 12:30 and should leave on friday.
+
+GT  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': '12:30'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': '12:30'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : There are 11 entries here. Shall I book one of these trains?
+Usr : Yes please, any of them will do. I just need the booking for 8 people.
+
+GT  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'people': '8', 'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': 'dontcare'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'people': '8', 'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': '12:30'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : I booked you on train TR2716 and your reference number is FNNVMU8Z.
+Usr : Ok great, thanks for your help.
+
+GT  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'people': '8', 'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': 'dontcare'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'people': '8', 'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': '12:30'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : May I help with anything else ?
+Usr : No, I think that's all for now. Thanks so much!
+
+GT  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'people': '8', 'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': 'dontcare'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '8', 'stay': '4', 'name': 'acorn guest house'}, 'train': {'people': '8', 'day': 'friday', 'departure': 'cambridge', 'destination': 'birmingham new street', 'leaveat': '12:30'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,72 @@
+Dialogue ID : MUL0371.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need to find a particular train that will arrive at 16:30 and will leave on Saturday. I would appreciate it if you could help me.
+
+GT  : {'train': {'arriveby': '16:30', 'day': 'saturday'}}
+PR  : {'train': {'arriveby': '16:30', 'day': 'saturday'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 229 trains that meet your criteria. What are your departure and arrival stations?
+Usr : I'm coming from Peterborough and going to Cambridge.
+
+GT  : {'train': {'arriveby': '16:30', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '16:30', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : TR6886 departs at 06:48 and arrives 07:38.  Will that work for you?  I can book it if you are interested.
+Usr : Yes please, can you make the reservation for 7 people and then send me the reference number.
+
+GT  : {'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Ok. I've booked that for you. Your reference number is 2K7LO41G. Can I help you with anything else?
+Usr : Yes. I am looking for a restaurant that serves modern eclectic food and is in the moderate price range.
+
+GT  : {'restaurant': {'food': 'modern eclectic', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'food': 'modern eclectic', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : I am sorry I cannot find any restaurants that meet your criteria. Would you like me to look for something else?
+Usr : How about one that serves indian food?
+
+GT  : {'restaurant': {'food': 'indian', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'food': 'indian', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : There are four restaurants that serve Indian food in the moderate price range, located in the east, north, and west areas. Do you have a preference?
+Usr : The east is fine. May I have the address, phone number, and postcode?
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Absolutely. The Curry Prince is located at 451 Newmarket Road Fen Ditton, cb58jj. The phone is 01223566388. Can I help with anything else today?
+Usr : No thank you, that will e all.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'pricerange': 'moderate'}, 'train': {'arriveby': '16:30', 'people': '7', 'day': 'saturday', 'departure': 'peterborough', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------

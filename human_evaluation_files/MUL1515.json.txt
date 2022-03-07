@@ -1,0 +1,82 @@
+Dialogue ID : MUL1515.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Need a restaurant that is moderate priced and in the centre.
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are quite a few moderately priced restaurants in the centre. Can you help me by telling me what kind of food you're looking for?
+Usr : I am looking for a restaurant that serves Polish food,
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'polish', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'polish', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : There is a lovely Polish restaurant called Barbakan, would you like me to make you a reservation?
+Usr : Yes, that sounds great! Could you make the reservation for 4 please?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'polish', 'name': 'barbakan', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'people': '4', 'food': 'polish', 'pricerange': 'moderate'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I'm sorry, I must have made a mistake.  There is no moderatly priced polish restaurant in the centre.  Would you be interested in another type of food?
+Usr : How about a place with British food? May as well get the full Cambridge experience! I'd like the address with postcode and phone number. Please don't reserve a table just yet.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'british', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'people': '4', 'food': 'british', 'pricerange': 'moderate'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : There are 4 to choose from, The Oak Bistro, The Copper Kettle, Restaurant One Seven, and Cotto. Do you have a preference?
+Usr : Lets go with the Copper Kettle.  I'd like their address as well.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'people': '4', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Sure thing! The Copper Kettle is located at 4 Kings Parade City Centre. Their postcode is cb21sj. You can reach them at 01223365068. Would you be needing a reservation after all?
+Usr : yes and im also looking  for a train from norwich on tuesday going to cambridge arriving by 19:15
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}, 'train': {'arriveby': '19:15', 'day': 'tuesday', 'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'centre', 'people': '4', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}, 'train': {'arriveby': '19:15', 'day': 'tuesday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I have a train from norwich to cambridge on tuesday that will leave at 17:16 and arrive by 18:35. Will this work for you?
+Usr : Yes that will work what is the price of the ticket?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}, 'train': {'arriveby': '18:35', 'day': 'tuesday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '17:16'}}
+PR  : {'restaurant': {'area': 'centre', 'people': '4', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}, 'train': {'arriveby': '19:15', 'day': 'tuesday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : It'll be 17.60 pounds.
+Usr : Thanks, that's all I need. Have a nice day.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}, 'train': {'arriveby': '18:35', 'day': 'tuesday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '17:16'}}
+PR  : {'restaurant': {'area': 'centre', 'people': '4', 'food': 'british', 'name': 'copper kettle', 'pricerange': 'moderate'}, 'train': {'arriveby': '19:15', 'day': 'tuesday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,82 @@
+Dialogue ID : PMUL2634.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you let me know about 4 star places in cambridge?  I want a personal touch, so a guesthouse who be perfect.
+
+GT  : {'hotel': {'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'stars': '4', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are several 4 star guesthouses to choose from.  What price range would you prefer?
+Usr : Moderately priced will work.  Also it should include free parking.
+
+GT  : {'hotel': {'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : How does the acorn guest house sound?  It is in the north.
+Usr : Sounds good, could you book me a room for 1 person for 4 nights starting Saturday?
+
+GT  : {'hotel': {'area': 'north', 'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Your room has been booked. Your reference number is AVBX60NT.  Is there anything else I can help you with?
+Usr : No, that's all I need.  Thanks for you assistance!
+
+GT  : {'hotel': {'area': 'north', 'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Thank you and have a wonderful day.
+Usr : I'm sorry, I forgot. I am also looking for museums to see.
+
+GT  : {'attraction': {'type': 'museum'}, 'hotel': {'area': 'north', 'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'attraction': {'type': 'museum'}, 'hotel': {'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : There are many museums in Cambridge. Is there a specific area that you would prefer? Also, do you prefer free or a cost for the museum?
+Usr : Actually, I am not really familiar with the area. Would you mind suggesting one to visit? Anywhere in town is fine.
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'area': 'north', 'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : One of my favorites that I could spend all day in is Cafe Jello Gallery on the west side.  Is there anything else I can help with?
+Usr : Perfect, could I have the entrance fee and postcode?
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'area': 'north', 'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'cafe jello gallery', 'type': 'museum'}, 'hotel': {'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : The entrance fee is free and the postcode is cb30af. Is there anything else I can help you with?
+Usr : No that will be all thank you so much.
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'area': 'north', 'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'cafe jello gallery', 'type': 'museum'}, 'hotel': {'day': 'saturday', 'people': '1', 'stay': '4', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------

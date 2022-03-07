@@ -1,0 +1,62 @@
+Dialogue ID : PMUL1788.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Please help me find a hotel called Flinches Bed and Breakfast. Thanks.
+
+GT  : {'hotel': {'name': 'finches bed and breakfast'}}
+PR  : {'hotel': {'name': 'rosas bed and breakfast'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : It's phone number is 01223276653 and is located in postcode cb30nd
+Usr : Thanks. I'd like to book a room for 6 people, for two nights on thursday.
+
+GT  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'finches bed and breakfast'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'rosas bed and breakfast'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : You're all set.  Your booking was successful and your reference number is VMI0R4J4.  Anything else I can help with?
+Usr : We will also need to catch a train that is going to Cambridge. Any trains that will put us in Cambridge by 12:00?
+
+GT  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'finches bed and breakfast'}, 'train': {'arriveby': '12:00', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'rosas bed and breakfast'}, 'train': {'arriveby': '12:00', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : There are many trains that will fit your schedule. Where will you be departing from and will you be traveling on Thursday?
+Usr : I'll be departing from leicester on Thursday.
+
+GT  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'finches bed and breakfast'}, 'train': {'arriveby': '12:00', 'day': 'thursday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'rosas bed and breakfast'}, 'train': {'arriveby': '12:00', 'day': 'thursday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I'm sorry, there are not trains leaving leicester on thursday.  Would you like me to look on another day?
+Usr : How about train stations near leicester?
+
+GT  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'finches bed and breakfast'}, 'train': {'arriveby': '12:00', 'day': 'thursday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'rosas bed and breakfast'}, 'train': {'arriveby': '12:00', 'day': 'thursday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Do you know what they would be called?
+Usr : No. thank you. Goodbye.
+
+GT  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'finches bed and breakfast'}, 'train': {'arriveby': '12:00', 'day': 'thursday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '6', 'stay': '2', 'name': 'rosas bed and breakfast'}, 'train': {'arriveby': '12:00', 'day': 'thursday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

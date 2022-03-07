@@ -1,0 +1,62 @@
+Dialogue ID : PMUL3946.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I want to find a train leaving Cambridge and going to Bishops Stortford. Can you help me?
+
+GT  : {'train': {'departure': 'cambridge', 'destination': 'bishops stortford'}}
+PR  : {'train': {'departure': 'cambridge', 'destination': 'bishops stortford'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Yes I can what time are you wanting to leave by?
+Usr : We need it to leave after 17:00 on Sunday.
+
+GT  : {'train': {'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+PR  : {'train': {'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have train TR6742 that leaves at 17:29 and will have you in Bishops Stortford by 18:07. Will that work for you?
+Usr : Yes could you book one ticket for me and give me the reference number?
+
+GT  : {'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+PR  : {'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Reference number is : BVD5QP16. Is there anything else?
+Usr : Perfect, thanks! Yes, actually there is one more thing. Please get me information on the huntingdon marriott hotel
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : It is located in the west,is expensive and has 4 stars.
+Usr : Can you tell me if they have free parking?
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : they do have free parking.
+Usr : I think that is all I need. Thank you.
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'bishops stortford', 'leaveat': '17:00'}}
+
+Matched : True
+
+----------------------

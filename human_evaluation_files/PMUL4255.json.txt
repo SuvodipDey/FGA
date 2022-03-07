@@ -1,0 +1,102 @@
+Dialogue ID : PMUL4255.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you help me find a train going to leicester that arrives by 15:15?
+
+GT  : {'train': {'arriveby': '15:15', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '15:15', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure! What day are you traveling?
+Usr : I will be leaving on Thursday.
+
+GT  : {'train': {'arriveby': '15:15', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '15:15', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Do you have a preference in departure time?
+Usr : I would like to catch an early train. What time does the first train depart?
+
+GT  : {'train': {'arriveby': '15:15', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '15:15', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : The first train departs at 5:21, but if you want to arrive at 15:15, the best train to take would be the TR1160 which will get there at 15:06.
+Usr : Okay how much is it per ticket?
+
+GT  : {'train': {'arriveby': '15:15', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '15:15', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : It will be 37.80 pounds per ticket.  Would you like me to book you seats?
+Usr : Yes book one day
+
+GT  : {'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Booking was successful, the total fee is 37.79 GBP payable at the station . Your reference number is 6SXPQRZJ. Can I help you with anything else?
+Usr : Yes, can you help me find a place to go to in town?
+
+GT  : {'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Yes, what sort of place would you like to go to?
+Usr : I'd really like to visit a museum.
+
+GT  : {'attraction': {'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'attraction': {'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : Do you have a preferred area?
+Usr : no, please surprise me.
+
+GT  : {'attraction': {'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : I have the Cambridge Museum of Technology located in the east side of town. It's at the site of the Old Pumping Station on Cheddar's lane. Would you like more information?
+Usr : Yes please! Could you kindly provide me with the phone number, post code, and the entrance fee I'd have to pay?
+
+GT  : {'attraction': {'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : the phone number is 01223368650, postcode cb58ld and entrance fee is 5 pounds
+Usr : Thank you. That is all I need at this time. Goodbye.
+
+GT  : {'attraction': {'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'cambridge museum of technology', 'type': 'museum'}, 'train': {'arriveby': '15:15', 'people': '1', 'day': 'thursday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------

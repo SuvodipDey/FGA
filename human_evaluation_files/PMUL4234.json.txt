@@ -1,0 +1,62 @@
+Dialogue ID : PMUL4234.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you help me find a nice restaurant?
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure! What kind of food do you like?
+Usr : I was thinking some indian food would be great.
+
+GT  : {'restaurant': {'food': 'indian'}}
+PR  : {'restaurant': {'food': 'indian'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have 22 indian restaurants- do you have a preference for area of town?
+Usr : No, I don't care where it is. I'm thinking I'd like an expensive restaurant.
+
+GT  : {'restaurant': {'area': 'dontcare', 'food': 'indian', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'dontcare', 'food': 'indian', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Would you like to try Curry Garden?
+Usr : That is fine book me a table for 6 on Sat at 17:30. I also need a train for the same and should leave leicester for cambridge
+
+GT  : {'restaurant': {'area': 'dontcare', 'day': 'saturday', 'people': '6', 'time': '17:30', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'expensive'}, 'train': {'people': '6', 'day': 'saturday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'dontcare', 'day': 'thursday', 'people': '6', 'time': '17:30', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'expensive'}, 'train': {'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Alright, I have made your requested booking at curry garden, and the reference number is HK9YCL6Z. As for the train, what time would you like to depart?
+Usr : it doesn't matter as long as I am there by 13:45 leaving leicester going to cambridge, I'll need the reference number too  please
+
+GT  : {'restaurant': {'area': 'dontcare', 'day': 'saturday', 'people': '6', 'time': '17:30', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'expensive'}, 'train': {'arriveby': '13:45', 'people': '6', 'day': 'saturday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'dontcare', 'day': 'thursday', 'people': '6', 'time': '17:30', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'expensive'}, 'train': {'arriveby': '13:45', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : I have found TR6210 leaving leicester at 11:09 on saturday and arriving in cambridge at 12:54.  I have booked 6 seats. Reference number is LR5I1RZV. anything else i can do?
+Usr : That will be all for today. Thanks so much for all your help. Goodbye
+
+GT  : {'restaurant': {'area': 'dontcare', 'day': 'saturday', 'people': '6', 'time': '17:30', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'expensive'}, 'train': {'arriveby': '13:45', 'people': '6', 'day': 'saturday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'dontcare', 'day': 'thursday', 'people': '6', 'time': '17:30', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'expensive'}, 'train': {'arriveby': '13:45', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

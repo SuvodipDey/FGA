@@ -1,0 +1,82 @@
+Dialogue ID : PMUL4366.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I saw a places with a weird name, cafe jello gallery.  Can you tell me more about it?
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Cafe Jello is a museum in the west part of town.
+Usr : Can you give me the address, please?
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Yes, the address is Cafe Jello Gallery, 13 Magdalene Street. Would you like more information?
+Usr : No thanks. But I could use some help with finding a train into Cambridge.
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : I'd be happy to help with that. Where are you leaving from, and what day and time?
+Usr : I am leaving from Norwich on Thursday. I need to arrive by 9.
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : TR3948 arrives at 08:35, shall I book a ticket for you?
+Usr : Yes, please book it.
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Certainly! Can you tell me how many tickets you will be needing?
+Usr : I have booked you one train ticket for Cafe Jello in Cambridge. Train number TR3948 departs from Norwich and arrives to Cambridge on Thursday at 8:35.
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'people': '1', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : That's interesting, considering you're the customer! Can you tell me how many tickets you'll need on that train?
+Usr : I need the train ID instead,please.
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'people': '1', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Looks like it's TR3948.
+Usr : Okay, great! That's all I'll be needing, thanks so much!
+
+GT  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'cafe jello gallery'}, 'train': {'arriveby': '09:00', 'people': '1', 'day': 'thursday', 'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

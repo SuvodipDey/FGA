@@ -1,0 +1,62 @@
+Dialogue ID : PMUL3309.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am planning a trip in Cambridge
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : great, would you like some information?
+Usr : I'm looking to go to Leicester.  I want to leave on Sunday and arrive by 21:45.
+
+GT  : {'train': {'arriveby': '21:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '21:45', 'day': 'sunday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Train TR9831 arrives in Leicester at 21:06, will that work for you?
+Usr : That would be fine. I'll need the travel time, price, and train ID, please?
+
+GT  : {'train': {'arriveby': '21:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'train': {'arriveby': '21:45', 'day': 'sunday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : train id is TR9831 leaves at 19:21 and will cost 30.24 pounds
+Usr : Thank you. Also i need to book a reservation at a restaurant named Nandos.
+
+GT  : {'restaurant': {'name': 'nandos'}, 'train': {'arriveby': '21:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'restaurant': {'name': 'nandos'}, 'train': {'arriveby': '21:45', 'day': 'sunday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Okay, we have two Nandos. One in the south and one in the centre. Which would you prefer?
+Usr : I'll go with the one in the centre. I need a booking for 8 at 16:45 on sunday.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '8', 'time': '16:45', 'name': 'nandos'}, 'train': {'arriveby': '21:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '8', 'time': '16:45', 'name': 'nandos'}, 'train': {'arriveby': '21:45', 'day': 'sunday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Your table is reserved, reference #VIUNXVBC. Can I help you with anything else today?
+Usr : That is all I need.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '8', 'time': '16:45', 'name': 'nandos'}, 'train': {'arriveby': '21:45', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '8', 'time': '16:45', 'name': 'nandos'}, 'train': {'arriveby': '21:45', 'day': 'sunday', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------

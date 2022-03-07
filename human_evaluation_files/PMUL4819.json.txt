@@ -1,0 +1,72 @@
+Dialogue ID : PMUL4819.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm needing a train leaving on wednesday and arriving by 11:00.
+
+GT  : {'train': {'arriveby': '11:00', 'day': 'wednesday'}}
+PR  : {'train': {'arriveby': '11:00', 'day': 'wednesday'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure, where are you leaving from and traveling to?
+Usr : From Broxbourne to Cambridge.
+
+GT  : {'train': {'arriveby': '11:00', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '11:00', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : TR5167 will arrive at 10:32, would that work for you?
+Usr : Yes please, will you make a booking for me for 2 people?
+
+GT  : {'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : The total fee is 35.79 GBP, payable at the station . Your Reference number is : 8G3VLD0W. Is there anything else I can help you with?
+Usr : Yes, I'm also looking for a place to stay. I'd like it to be expensive with a star of 2.
+
+GT  : {'hotel': {'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+PR  : {'hotel': {'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The Express by Holiday Inn Cambridge fits your criteria. Would you like to book a room?
+Usr : Does it have free parking?
+
+GT  : {'hotel': {'parking': 'yes', 'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'express by holiday inn cambridge', 'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : yes it does have free parking. Can I help you with anything else today?
+Usr : Yes. I would like to book a room for 2 people staying 4 nights starting on Wednesday.
+
+GT  : {'hotel': {'day': 'wednesday', 'people': '2', 'stay': '4', 'name': 'express by holiday inn cambridge', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'wednesday', 'people': '2', 'stay': '4', 'name': 'express by holiday inn cambridge', 'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : All set, you reference number is 9XF20LU4, may I be of any further assistance?
+Usr : That is all I need thank you.
+
+GT  : {'hotel': {'day': 'wednesday', 'people': '2', 'stay': '4', 'name': 'express by holiday inn cambridge', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'wednesday', 'people': '2', 'stay': '4', 'name': 'express by holiday inn cambridge', 'pricerange': 'expensive', 'stars': '2'}, 'train': {'arriveby': '11:00', 'people': '2', 'day': 'wednesday', 'departure': 'broxbourne', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,82 @@
+Dialogue ID : MUL0761.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need a train that departs from Ely on Thursday.
+
+GT  : {'train': {'day': 'thursday', 'departure': 'ely'}}
+PR  : {'train': {'day': 'thursday', 'departure': 'ely'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : We have 10 trains leaving from Ely on Thursday. Where would you like to go?
+Usr : I would like to go to Cambridge after 18:00.
+
+GT  : {'train': {'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+PR  : {'train': {'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : We have three trains departing from Ely after 18:00. The earliest departing at 19:35 and arriving by 19:52. It'll be a 17 minute trip.
+Usr : I would like to book the 19:35 train for 7 people. I will need the reference number, please.
+
+GT  : {'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '19:35'}}
+PR  : {'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I have booked your train for 7 people. 30.8 GBP will be payable at the station. The reference number is MTT3EDCU. Is there anything else I can help you with?
+Usr : Yes, I'm also looking for a place to stay in the north. I do need free parking.
+
+GT  : {'hotel': {'area': 'north', 'parking': 'yes'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '19:35'}}
+PR  : {'hotel': {'area': 'north', 'parking': 'yes'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : OK I found 11 places fitting your requirements. Do you need free WIFI?
+Usr : I don't care about wifi, but I would like a guest house, please.
+
+GT  : {'hotel': {'area': 'north', 'internet': 'dontcare', 'parking': 'yes', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '19:35'}}
+PR  : {'hotel': {'area': 'north', 'internet': 'dontcare', 'parking': 'yes', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : There are 9 guesthouses fitting your criteria. Is there a certain star rating you would like the guesthouse to have?
+Usr : I would like something with at least three stars.
+
+GT  : {'hotel': {'area': 'north', 'internet': 'dontcare', 'parking': 'yes', 'stars': '3', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '19:35'}}
+PR  : {'hotel': {'area': 'north', 'internet': 'dontcare', 'parking': 'yes', 'stars': '3', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : How about Acorn Guest House? It has free parking and is rated 4 stars.
+Usr : That should be great can I book it for 2 nights for 7 people starting thursday please?
+
+GT  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '7', 'stay': '2', 'internet': 'dontcare', 'name': 'acorn guest house', 'parking': 'yes', 'stars': '3', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '19:35'}}
+PR  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '7', 'stay': '2', 'internet': 'dontcare', 'name': 'acorn guest house', 'parking': 'yes', 'stars': '3', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : No problem at all. Your reference number is Y41W8UWB.
+Usr : That's all I need. Thank you!
+
+GT  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '7', 'stay': '2', 'internet': 'dontcare', 'name': 'acorn guest house', 'parking': 'yes', 'stars': '3', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '19:35'}}
+PR  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '7', 'stay': '2', 'internet': 'dontcare', 'name': 'acorn guest house', 'parking': 'yes', 'stars': '3', 'type': 'guest house'}, 'train': {'people': '7', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:00'}}
+
+Matched : False
+
+----------------------

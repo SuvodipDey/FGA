@@ -1,0 +1,63 @@
+Dialogue ID : PMUL2433.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello, I'm looking for an attraction in the type of theatre.
+
+GT  : {'attraction': {'type': 'theatre'}}
+PR  : {'attraction': {'type': 'theatre'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There is the ADC Theatre, Cambridge Arts Theatre, Mumford Theatre, The Cambridge Corn Exchange, and The Junction. Which would you like to know about?
+Usr : Could I get the postcode and entrance fee for the Mumford Theatre please?
+
+GT  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : i don't know the entrance fee but the postcode is cb11pt
+Usr : I also need an expensive restaurant in the east.
+
+GT  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : There are plenty of expensive restaurants on the East side but if you tell me what kind of cuisine you're interested in, I can narrow it down and recommend one.
+Usr : i am not specific on that. recommend one and book for me
+
+GT  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'food': 'dontcare', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I would be more than elated to book it for you, but I need some additional information like when, and how many perhaps?
+Usr : I need a table for 7 people at 19:15 on Saturday.
+
+GT  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '19:15', 'food': 'dontcare', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '19:15', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Okay, I booked you with yu garden. The table will be reserved for 15 minutes.
+Reference number is : 9PMB11JL.
+Usr : Ok, that's all I needed today, Thanks!
+
+GT  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '19:15', 'food': 'dontcare', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '19:15', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------

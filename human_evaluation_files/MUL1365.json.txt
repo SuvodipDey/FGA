@@ -1,0 +1,62 @@
+Dialogue ID : MUL1365.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a restaurant called loch fyne
+
+GT  : {'restaurant': {'name': 'loch fyne'}}
+PR  : {'restaurant': {'name': 'loch fyne'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : That is a nice seafood restaurant located on Trumpington Street.  Can I reserve a table for you?
+Usr : Can you tell me a little more about the place? I need to know what type of food they serve, price range and where it's located.
+
+GT  : {'restaurant': {'name': 'loch fyne'}}
+PR  : {'restaurant': {'name': 'loch fyne'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : It is an expensive restaurant. They serve seafood and they are located at The Little Rose 37 Trumpington Street.
+Usr : Great. I also need to know about a hotel called the Hamilton lodge.
+
+GT  : {'hotel': {'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+PR  : {'hotel': {'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Hamilton lodge is a guesthouse located in the north part of town is moderately priced and has a 3 star rating. Would you like me to book it?
+Usr : Yes please. I need 2 night stay starting from Friday for 3 people.
+
+GT  : {'hotel': {'day': 'friday', 'people': '3', 'stay': '2', 'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+PR  : {'hotel': {'day': 'friday', 'people': '3', 'stay': '2', 'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Unsuccessful book. Would like to add or delete a day?
+Usr : I really want to stay there so can I get it for one night?
+
+GT  : {'hotel': {'day': 'friday', 'people': '3', 'stay': '1', 'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+PR  : {'hotel': {'day': 'friday', 'people': '3', 'stay': '1', 'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I reserved you one night. The reference is K8JUOP9V. Do you need any more assistance?
+Usr : No, thank you.  You have been of great help.
+
+GT  : {'hotel': {'day': 'friday', 'people': '3', 'stay': '1', 'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+PR  : {'hotel': {'day': 'friday', 'people': '3', 'stay': '1', 'name': 'hamilton lodge'}, 'restaurant': {'name': 'loch fyne'}}
+
+Matched : True
+
+----------------------

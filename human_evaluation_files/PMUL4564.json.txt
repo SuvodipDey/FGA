@@ -1,0 +1,63 @@
+Dialogue ID : PMUL4564.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I would like to see some type of entertainment while visiting cambridge.
+
+GT  : {'attraction': {'type': 'entertainment'}}
+PR  : {'attraction': {'type': 'entertainment'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : We have five entertainment venues, do you have an area that you want me to search in?
+Usr : If you could find me a good one, just tell me the area and I need a postcode
+
+GT  : {'attraction': {'type': 'entertainment'}}
+PR  : {'attraction': {'type': 'entertainment'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Whale of a Time is a great place! It is in the West and the post code is cb238el. Do you need more information?
+Usr : Yes, I also need a restaurant ina mdoerate range that serve modern european food.
+
+GT  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'food': 'modern european', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'food': 'modern european', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : We've got 3 places serving modern european food in town, 2 are in the city centre and one in the south. Do you have a preference?
+Usr : How about the center? I need a reservation for Wednesday for 1 person at 14:40.
+
+GT  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '14:40', 'food': 'modern european', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '14:40', 'food': 'modern european', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : We have 2 in the center, De Luca Cucina and Bar, and Riverside Brasserie, they are great eats.
+Usr : I will take a reservation at the Riverside Brasserie for 1 person at 14:30 on Wednesday.
+
+GT  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '14:30', 'food': 'modern european', 'name': 'riverside brasserie', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '14:40', 'food': 'modern european', 'name': 'riverside brasserie', 'pricerange': 'moderate'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Booked. The table will be reserved for 15 minutes.
+Reference number: 55VU3FCX.
+Usr : Excellent.  Thanks for all the help!
+
+GT  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '14:30', 'food': 'modern european', 'name': 'riverside brasserie', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'type': 'entertainment'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '14:40', 'food': 'modern european', 'name': 'riverside brasserie', 'pricerange': 'moderate'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,92 @@
+Dialogue ID : PMUL4343.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you get me information on a restaurant called mahal of cambridge?
+
+GT  : {'restaurant': {'name': 'mahal of cambridge'}}
+PR  : {'restaurant': {'name': 'mahal of cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure it is a cheap Indian restaurant in the town centre.  I hear it has great food.
+Usr : Do you think they would be able to make reservations for a party of 7?
+
+GT  : {'restaurant': {'people': '7', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'people': '7', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : I can help you with that. When would you like to make the reservation for?
+Usr : 17:45 for a table of 7 for the restaurant stated above. Thank you!
+
+GT  : {'restaurant': {'people': '7', 'time': '17:45', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'people': '7', 'time': '17:45', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : What day would you like that reservation for?
+Usr : Oh, Tuesday please. And if you could give me a reference number, that'd be great.
+
+GT  : {'restaurant': {'day': 'tuesday', 'people': '7', 'time': '17:45', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'day': 'tuesday', 'people': '7', 'time': '17:45', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I have successfully booked your table! Your reference number is WOQ10J3G. Anything else I can help you with today?
+Usr : I would also like the address of a museum in the centre of town
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '17:45', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '17:45', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Primavera is a museum in the center of town. Their address is 10 king s parade. What else can I help with?
+Usr : Oh, I made a mistake. I really need that table for 16:15, not 17:45. Can you change it, do you thing?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Yes, I already changed it for you. Your new reference number is BTMSNGCD.
+Usr : Thank you for making that change. Can you recommend a museum in the centre?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : We have 11 museums in the Centre, my personal favorite is the Castle Galleries at Unit su43, Grande arcade, Saint Andrews street. There is no entrance fee there.
+Usr : That sounds great. I will plan to stop at that museum.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'castle galleries', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Great! Have a great time. Is there anything else you need?
+Usr : No that is it. Thank you.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'castle galleries', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'food': 'indian', 'name': 'mahal of cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'day': 'tuesday', 'people': '7', 'time': '16:15', 'name': 'mahal of cambridge'}}
+
+Matched : False
+
+----------------------

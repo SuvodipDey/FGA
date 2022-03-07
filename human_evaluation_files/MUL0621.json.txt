@@ -1,0 +1,72 @@
+Dialogue ID : MUL0621.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a hotel called the El Shaddai in Cambridge.
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Yes, the El Shaddai is a guesthouse in the area of Centre, it has free internet and parking and is on the cheap side. When would you like to book for?
+Usr : What is the rating of this hotel?
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : It has 0 stars.
+Usr : I am also looking for a train, departing norwich, going to cambridge.
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'departure': 'norwich', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'departure': 'norwich', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : We have 133 entries that match that criteria. Do you have a date and time in mind?
+Usr : Friday leaving after 09:15 please
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : I have train TR2365 departing at 9:16 and arriving at 10:35. Would you like me to book that for you or if you prefer another time let me know.
+Usr : Tr2365 will be fine.  Book it please.
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'people': '1', 'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Great! I just need to know how many tickets you want. Will it just be you?
+Usr : I just need the travel time please
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'people': '1', 'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : The travel time for that train is 79 minutes.
+Usr : Perfect! That's all I need, thank you.
+
+GT  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+PR  : {'hotel': {'name': 'el shaddia guesthouse'}, 'train': {'people': '1', 'day': 'friday', 'departure': 'norwich', 'destination': 'cambridge', 'leaveat': '09:15'}}
+
+Matched : False
+
+----------------------

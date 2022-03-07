@@ -1,0 +1,92 @@
+Dialogue ID : MUL1258.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm trying to find an Italian restaurant in the city centre.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'italian'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'italian'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : What price range are you looking at?
+Usr : I would like a expensive price range.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : How about caffee uno. there are also 3 others.
+Usr : That sounds interesting actually.  Can you give me the address and phone number perhaps?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Sure, they are on 32 Bridge Street City Centre and their number is 01223448620.
+Usr : Great can I also get some information on the huntingdon marriott hotel?
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Huntingdon Marriott Hotel has 4 stars and  is located in the west and is in the expensive price range. They have internet and parking.
+Usr : Thanks for the information. Have a lovely day.
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Can I help you with anything else today?
+Usr : Yes, actually. What is the postcode of Caffee Uno?
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : The postcode for Caffe Uno is cb21uj.  Is there anything else I can help you with?
+Usr : Can I get a taxi to take me from the restaurant to the hotel?
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}, 'taxi': {'departure': 'caffee uno', 'destination': 'huntingdon marriott hotel'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}, 'taxi': {'departure': 'cafe uno', 'destination': 'huntingdon marriott hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : What time would you like that taxi to pick you up?
+Usr : I am wanting to leave the restaurant by 11:45. Once the taxi is booked, can I have the contact number and car type?
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}, 'taxi': {'departure': 'caffee uno', 'destination': 'huntingdon marriott hotel', 'leaveat': '11:45'}, 'train': {'departure': 'cafe uno', 'destination': 'huntington marriott', 'leaveat': '12:15'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}, 'taxi': {'departure': 'cafe uno', 'destination': 'huntingdon marriott hotel', 'leaveat': '11:45'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Ok, your taxi is booked. The car will be a yellow skoda and the contact number is 07563271262.
+Usr : Perfect! Thanks. That's it for today. Goodbye.
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}, 'taxi': {'departure': 'caffee uno', 'destination': 'huntingdon marriott hotel', 'leaveat': '11:45'}, 'train': {'departure': 'cafe uno', 'destination': 'huntington marriott', 'leaveat': '12:15'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'cafe uno', 'pricerange': 'expensive'}, 'taxi': {'departure': 'cafe uno', 'destination': 'huntingdon marriott hotel', 'leaveat': '11:45'}}
+
+Matched : False
+
+----------------------

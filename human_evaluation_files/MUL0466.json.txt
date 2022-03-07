@@ -1,0 +1,82 @@
+Dialogue ID : MUL0466.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello I want to see some authentic architectures in cambridge!
+
+GT  : {'attraction': {'type': 'architecture'}}
+PR  : {'attraction': {'type': 'architecture'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There is plenty of architectural churches in the centre.  Would you like their addresses?
+Usr : Please. Could you also provide their phone number and entrance fees?
+
+GT  : {'attraction': {'type': 'architecture'}}
+PR  : {'attraction': {'type': 'architecture'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Holy trinity church is in the centre of town their number is 01223355397 and they have a free entrance fee.
+Usr : Okay. Wonderful. May I have the exact address as well? Also I need help finding a train to go to Stansted Airport that will arrive by 18:00.
+
+GT  : {'attraction': {'name': 'holy trinity church', 'type': 'architecture'}, 'train': {'arriveby': '18:00', 'destination': 'stansted airport'}}
+PR  : {'attraction': {'type': 'architecture'}, 'train': {'arriveby': '18:00', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : The Holy Trinity Church's address is Market Street, postcode cb23nz. There are many trains arriving in Stansted Airport by 18:00. Would you like to narrow your search further?
+Usr : Yes. I would like a direct, nonstop train.
+
+GT  : {'attraction': {'name': 'holy trinity church', 'type': 'architecture'}, 'train': {'arriveby': '18:00', 'destination': 'stansted airport'}}
+PR  : {'attraction': {'type': 'architecture'}, 'train': {'arriveby': '18:00', 'day': 'thursday', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : What day and time do you want to leave?
+Usr : I would like to leave from Cambridge on Friday. I need to arrive by 18:00.
+
+GT  : {'attraction': {'name': 'holy trinity church', 'type': 'architecture'}, 'train': {'arriveby': '18:00', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'attraction': {'type': 'architecture'}, 'train': {'arriveby': '18:00', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : There is a direct, 28 minute train from Cambridge to Stansted that leaves at 14:40 and arrives at 15:08. All other trains arrive after 16:00. Would you like me to book this?
+Usr : Yes, I need 4 tickets.
+
+GT  : {'attraction': {'name': 'holy trinity church', 'type': 'architecture'}, 'train': {'arriveby': '18:00', 'people': '4', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'attraction': {'type': 'architecture'}, 'train': {'arriveby': '18:00', 'people': '4', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Great!  I have you booked for four tickets on Train TR1316 with a total fee of 40.4 GBP.  Your reference number is EFGE9M7Z.  Anything else?
+Usr : No, thank you.
+
+GT  : {'attraction': {'name': 'holy trinity church', 'type': 'architecture'}, 'train': {'arriveby': '18:00', 'people': '4', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'attraction': {'type': 'architecture'}, 'train': {'arriveby': '18:00', 'people': '4', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Have a great day!
+Usr : Thank you. You too!
+
+GT  : {'attraction': {'name': 'holy trinity church', 'type': 'architecture'}, 'train': {'arriveby': '18:00', 'people': '4', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'attraction': {'type': 'architecture'}, 'train': {'arriveby': '18:00', 'people': '4', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------

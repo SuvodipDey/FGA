@@ -1,0 +1,102 @@
+Dialogue ID : PMUL1801.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need a train to Peterborough that will be there no later than 17:15.
+
+GT  : {'train': {'arriveby': '17:15', 'destination': 'peterborough'}}
+PR  : {'train': {'arriveby': '17:15', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I have several choices, do you have a time for your departure?
+Usr : I am looking for a train arriving in Peterborough.
+
+GT  : {'train': {'arriveby': '17:15', 'destination': 'peterborough'}}
+PR  : {'train': {'arriveby': '17:15', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : And where will you be leaving from?
+Usr : I'll be leaving Cambridge on Sunday.
+
+GT  : {'train': {'arriveby': '17:15', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'train': {'arriveby': '17:15', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : I have train TR1086 that leaves at 16:06 and will have you in Peterborough at 16:56. Would this work for you?
+Usr : Yes, that will be fine can you get me a ticket?
+
+GT  : {'train': {'arriveby': '17:15', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'train': {'arriveby': '17:15', 'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : How many tickets will you need?
+Usr : I need 7 tickets.
+
+GT  : {'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I've booked you 7 tickets on the TR1086. Your reference is IJ6ZQ2GF and the total fee of 92.4 GBP is payable at the station. Can I help you with anything else?
+Usr : I am also looking for a place to stay.
+
+GT  : {'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : sure, in what area of town?
+Usr : I'd like something moderately-priced, 3-stars, and in the north. And I do need wifi.
+
+GT  : {'hotel': {'area': 'north', 'internet': 'yes', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'hotel': {'area': 'north', 'internet': 'yes', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : The Hamilton Lodge is a guesthouse that meets your specifications. Would you like any additional information? I could also book a room for you.
+Usr : No, but could you book a room on Tuesday for me please?
+
+GT  : {'hotel': {'area': 'north', 'day': 'tuesday', 'internet': 'yes', 'name': 'hamilton lodge', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'hotel': {'area': 'north', 'day': 'tuesday', 'internet': 'yes', 'name': 'hamilton lodge', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : True
+
+----------------------
+Turn: 8
+Sys : I'd be happy to! How many are in your party and how many nights will you be staying?
+Usr : 7 5 nights starting from tuesday, need the reference number too please
+
+GT  : {'hotel': {'area': 'north', 'day': 'tuesday', 'people': '7', 'stay': '5', 'internet': 'yes', 'name': 'hamilton lodge', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'hotel': {'area': 'north', 'day': 'tuesday', 'people': '7', 'stay': '2', 'internet': 'yes', 'name': 'hamilton lodge', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : I have made your reservations and your reference number is CKPI787R.
+Usr : that is it for today
+
+GT  : {'attraction': {'area': 'dontcare'}, 'hotel': {'area': 'north', 'day': 'tuesday', 'people': '7', 'stay': '5', 'internet': 'yes', 'name': 'hamilton lodge', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+PR  : {'hotel': {'area': 'north', 'day': 'tuesday', 'people': '7', 'stay': '2', 'internet': 'yes', 'name': 'hamilton lodge', 'pricerange': 'moderate', 'stars': '3'}, 'train': {'arriveby': '17:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'peterborough'}}
+
+Matched : False
+
+----------------------

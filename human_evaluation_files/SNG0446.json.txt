@@ -1,0 +1,32 @@
+Dialogue ID : SNG0446.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a train that departs cambridge after 21:00 on Thursday.
+
+GT  : {'restaurant': {'food': 'mexican'}, 'train': {'day': 'thursday', 'departure': 'cambridge', 'leaveat': '21:00'}}
+PR  : {'train': {'day': 'thursday', 'departure': 'cambridge', 'leaveat': '21:00'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : What is your destination that you would like to go to?
+Usr : I'm heading to Stansted Airport, I need to book for 2 people and can I please get a reference number?
+
+GT  : {'restaurant': {'food': 'mexican'}, 'train': {'people': '2', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '21:00'}}
+PR  : {'train': {'people': '2', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '21:00'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Sure thing. The reference number is WRAD7NNO. Can I assist with anything else?
+Usr : No that will be all . Thank you.
+
+GT  : {'restaurant': {'food': 'mexican'}, 'train': {'people': '2', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '21:00'}}
+PR  : {'train': {'people': '2', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '21:00'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,92 @@
+Dialogue ID : PMUL1323.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a college in the east.
+
+GT  : {'attraction': {'area': 'east', 'type': 'college'}}
+PR  : {'attraction': {'area': 'east', 'type': 'college'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I apologize, I am unable to locate any colleges in the East. Would you like to try another area?
+Usr : I'm sorry, I meant the centre.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'college'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I see. The centre offers 13 colleges. Most, like Saint Catharine's College on king's parade, are free to visit.
+Usr : Can you give me the address, phone number, and entrance fee for Saint Catherine's College?
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Sure the address is on King's Parade post code cb21rl.  The phone number is 01223338300.  Is there anything else that you need?
+Usr : Yes I also need a train leaving from cambridge.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}, 'train': {'departure': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'departure': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : i have over a thousand trains leaving from cambridge. what day and time do you wish to travel?
+Usr : I will travel on Sunday.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}, 'train': {'day': 'sunday', 'departure': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'day': 'sunday', 'departure': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : What is your destination and what time would you like to leave?
+Usr : I would like to go to cambridge on sunday.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}, 'train': {'day': 'sunday', 'departure': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'day': 'sunday', 'departure': 'cambridge', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Sorry, I'm confused - are you leaving from Cambridge or is Cambridge your destination? If it is your destination, what is your departure site?
+Usr : I am leaving from london liverpool street and need to arrive by 12:00 in cambridge.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}, 'train': {'arriveby': '12:00', 'day': 'sunday', 'departure': 'london liverpool street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '12:00', 'day': 'sunday', 'departure': 'london liverpool street', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : I have train TR8580 leaving at 23:39 and arriving at 1:07. Would you like tickets?
+Usr : Yes, for me and my girl please.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}, 'train': {'arriveby': '12:00', 'people': '2', 'day': 'sunday', 'departure': 'london liverpool street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '12:00', 'people': '2', 'day': 'sunday', 'departure': 'london liverpool street', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Your booking was successful, the total fee is 26.56 GBP payable at the station. Reference number is Z8EQXNH5. How else can I be of service?
+Usr : that is all. thank you very much.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'saint catharines college', 'type': 'college'}, 'train': {'arriveby': '12:00', 'people': '2', 'day': 'sunday', 'departure': 'london liverpool street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '12:00', 'people': '2', 'day': 'sunday', 'departure': 'london liverpool street', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

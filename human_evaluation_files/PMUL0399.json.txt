@@ -1,0 +1,114 @@
+Dialogue ID : PMUL0399.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm looking for a place to stay in Cambridge, please.
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 33 places to stay in Cambridge. Do you have a preferred area of Cambridge?
+Usr : The location isn't really important.  It does need to be cheap though, and preferably a guesthouse.
+
+GT  : {'hotel': {'area': 'dontcare', 'pricerange': 'cheap', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'dontcare', 'pricerange': 'cheap', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have nine places. Do you need free parking or any other restrictions?
+Usr : I need internet in the west.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : There is one available would you like me to book it?
+Usr : what is the name of the place?
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The name is Finches Bed and Breakfast.  Would you like to book a room there?
+Usr : Yes can you please?
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : How many people in the room and how many nights would you like to stay?
+Usr : I'm sorry, I am mistaken. I will not need you to book a reservation for me. I will need the area, address, and post code please.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : finches bed and breakfast is a guesthouse in the west. It's cheap, and four stars. 144 thornton road, cb30nd. Phone is 01223276653. Can i help with anything else?
+Usr : I'm also looking for a cheap Italian place in the center of town.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : I can recommend a restaurant called Ask, would you like me to make reservations for you?
+Usr : No, thanks! I just need their phone number, postcode, and address, please.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'ask', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : 01223364917 is the phone number. 12 Bridge Street City Centre, cb21uf is the address.
+Usr : Thanks. I will also need a taxi from the hotel to the restaurant. Will you handle this?
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'ask', 'pricerange': 'cheap'}, 'taxi': {'departure': 'finches bed and breakfast', 'destination': 'ask'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}, 'taxi': {'departure': 'finches bed and breakfast', 'destination': 'ask'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : I can help you with that. When would you like to leave the hotel?
+Usr : I'll need to leave the hotel by 3:00.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'ask', 'pricerange': 'cheap'}, 'taxi': {'departure': 'finches bed and breakfast', 'destination': 'ask', 'leaveat': '03:00'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}, 'taxi': {'departure': 'finches bed and breakfast', 'destination': 'ask', 'leaveat': '03:00'}}
+
+Matched : False
+
+----------------------
+Turn: 10
+Sys : Booking completed!
+Booked car type		grey volvo
+Contact number		07477541353
+Usr : Thanks for all of your help.  I am all set now.  Bye.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'ask', 'pricerange': 'cheap'}, 'taxi': {'departure': 'finches bed and breakfast', 'destination': 'ask', 'leaveat': '03:00'}}
+PR  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}, 'taxi': {'departure': 'finches bed and breakfast', 'destination': 'ask', 'leaveat': '03:00'}}
+
+Matched : False
+
+----------------------

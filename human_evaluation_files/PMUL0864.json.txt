@@ -1,0 +1,93 @@
+Dialogue ID : PMUL0864.json
+----------------------
+Turn: 0
+Sys :  
+Usr : May have some information on a restaurant in town?
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : What type of food would you like?
+Usr : I would like Italian food.
+
+GT  : {'restaurant': {'food': 'italian'}}
+PR  : {'restaurant': {'food': 'italian'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : What side of town and what price point?
+Usr : cheap price range.
+Once you find the restaurant you want to book a table for 5 people at 12:15 on sunday and I need the reference number
+
+GT  : {'restaurant': {'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : I have the list up, I want to make sure I didnt forget an area preference first,  Do you have one?
+Usr : I would want something in the centre of town.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I have several places are you preferring pasta or pizza?
+Usr : I would like pizza please.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Pizza hut city centre should be a great choice. They'll hold a table for you for 15 minutes. Your reference number is T66ZY8AM.
+Usr : Thank you! Can you help me find a train for Monday?
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'name': 'pizza hut city centre', 'pricerange': 'cheap'}, 'train': {'day': 'monday'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}, 'train': {'day': 'monday'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : sure. where do you want to departure from?
+Usr : I will leave Cambridge and go to Kings Lynn.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'name': 'pizza hut city centre', 'pricerange': 'cheap'}, 'train': {'day': 'monday', 'departure': 'cambridge', 'destination': 'kings lynn'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}, 'train': {'day': 'monday', 'departure': 'cambridge', 'destination': 'kings lynn'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Can you tell me what time you would like to leave or arrive by?
+Usr : I have to be there by 10:45 and I'll need the train ID, please.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'name': 'pizza hut city centre', 'pricerange': 'cheap'}, 'train': {'arriveby': '10:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'kings lynn'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}, 'train': {'arriveby': '10:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'kings lynn'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : train tr1163 will get you to kings lynn by 09:58.
+Usr : Thank you, that is all
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'name': 'pizza hut city centre', 'pricerange': 'cheap'}, 'train': {'arriveby': '10:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'kings lynn'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'sunday', 'people': '5', 'time': '12:15', 'food': 'italian', 'pricerange': 'cheap'}, 'train': {'arriveby': '10:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'kings lynn'}}
+
+Matched : False
+
+----------------------

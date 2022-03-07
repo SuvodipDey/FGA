@@ -1,0 +1,92 @@
+Dialogue ID : PMUL4186.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm looking for a restaurant called nandos. Are you aware of it?
+
+GT  : {'restaurant': {'name': 'nandos'}}
+PR  : {'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I am.  It is a great portuguese place.  They have two locations in town.  One in the South and on in the city centre.
+Usr : Are you sure that they have two locations? Can you tell me their address(es)?
+
+GT  : {'restaurant': {'name': 'nandos'}}
+PR  : {'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Nandos in the south is at Cambridge Leisure Park Clifton Way. Nandos City Centre is at 33-34 Saint Andrews Street. Do you need additional information?
+Usr : Yes, I'm also looking for a hotel - the cambridge belfry?
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : The cambridge belfry 4 star hotel is a hotel in the west part of town in the cheap price range. Would you like any more information?
+Usr : Yes their postcode and whether they have free parking or not.
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The postcode for the nandos is cb17dy
+Usr : You didn't answer my question. I need the postcode for The Cambridge Belfry and I need to know if they have free parking or not.
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : They do have free parking.
+Usr : Okay, That is all I need ton know.
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : cb236bw Is the postcode for the Cambridge Belfry. Do you need to book this hotel?
+Usr : What is their price range?
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : it's an inexpensive hotel
+Usr : cool, that's all i need thanks
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------
+Turn: 8
+Sys : Is there anything else that I can assist you with, today?
+Usr : No. I think that is all. I think you were a lot of help. Bye.
+
+GT  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+PR  : {'hotel': {'name': 'cambridge belfry'}, 'restaurant': {'name': 'nandos'}}
+
+Matched : True
+
+----------------------

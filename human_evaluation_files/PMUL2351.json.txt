@@ -1,0 +1,62 @@
+Dialogue ID : PMUL2351.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Are there any colleges in town I could go to? I would appreciate your help.
+
+GT  : {'attraction': {'type': 'college'}}
+PR  : {'attraction': {'type': 'college'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Yes may I ask what area you are looking for it to be in?
+Usr : I don't care what area it's in. Can you recommend a good one?
+
+GT  : {'attraction': {'type': 'college'}}
+PR  : {'attraction': {'area': 'dontcare', 'type': 'college'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Sure, I think you should check out Clare College. Would you like information about visiting?
+Usr : Yes. I want the phone number please.
+
+GT  : {'attraction': {'type': 'college'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'clare college', 'type': 'college'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : The phone number to clare college is 01223333200. Is there anything else i can help you with?
+Usr : I would also like to book a table at the restaurant Ask for 8 people on Tuesday at 18:00.
+
+GT  : {'attraction': {'type': 'college'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'clare college', 'type': 'college'}, 'restaurant': {'day': 'tuesday', 'people': '8', 'time': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : What area of town would you like to eat in?
+Usr : any side. book for 8 people at 18:00 on teusday
+
+GT  : {'attraction': {'type': 'college'}, 'restaurant': {'day': 'tuesday', 'people': '8', 'time': '18:00', 'name': 'ask'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'clare college', 'type': 'college'}, 'restaurant': {'area': 'dontcare', 'day': 'tuesday', 'people': '8', 'time': '18:00'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : You're all booked. Reference number is ISIBYOUI. Can I help you with anything else?
+Usr : No that would be it thanks.
+
+GT  : {'attraction': {'type': 'college'}, 'restaurant': {'day': 'tuesday', 'people': '8', 'time': '18:00', 'name': 'ask'}}
+PR  : {'attraction': {'area': 'dontcare', 'name': 'clare college', 'type': 'college'}, 'restaurant': {'area': 'dontcare', 'day': 'tuesday', 'people': '8', 'time': '18:00'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,62 @@
+Dialogue ID : PMUL4362.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi there. Can you help me find a restaurant in the centre?
+
+GT  : {'restaurant': {'area': 'centre'}}
+PR  : {'restaurant': {'area': 'centre'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Yes, there are some great choices.  Do you like a particular cuisine?
+Usr : Yes I would like it to serve asian oriental
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'asian oriental'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'asian oriental'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : There are four options available that meet your criteria. I'd recommend the Yippee Noodle Bar. Would you like to book a table?
+Usr : No, but I would like the postcode for that restaurant please.  I also need to find a place to stay.  Could you help me with that?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'asian oriental', 'name': 'yippee noodle bar'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'asian oriental'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : The postcode of the restaurant is cb11lh. I can help you find a place to stay. Did you have a certain area in mind?
+Usr : How about some place cheap, with 4 stars?
+
+GT  : {'hotel': {'pricerange': 'cheap', 'stars': '4'}, 'restaurant': {'area': 'centre', 'food': 'asian oriental', 'name': 'yippee noodle bar'}}
+PR  : {'hotel': {'pricerange': 'cheap', 'stars': '4'}, 'restaurant': {'area': 'centre', 'food': 'asian oriental'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Did you want the hotel to be in the centre area, also?
+Usr : Centre area will work. but it has to be a guest house. I also need the adress and post code.
+
+GT  : {'hotel': {'area': 'centre', 'pricerange': 'cheap', 'stars': '4', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'asian oriental', 'name': 'yippee noodle bar'}}
+PR  : {'hotel': {'area': 'centre', 'pricerange': 'cheap', 'stars': '4', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'asian oriental'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : The Alexander Bed and Breakfast seems to be a good fit. They are located at 56 Saint Barnabas Road, postcode cb12de.
+Usr : That was all I needed thank you.
+
+GT  : {'hotel': {'area': 'centre', 'pricerange': 'cheap', 'stars': '4', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'asian oriental', 'name': 'yippee noodle bar'}}
+PR  : {'hotel': {'area': 'centre', 'name': 'alexander bed and breakfast', 'pricerange': 'cheap', 'stars': '4', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'food': 'asian oriental'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,72 @@
+Dialogue ID : PMUL2000.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for information on a hotel called hobsons house.
+
+GT  : {'hotel': {'name': 'hobsons house'}}
+PR  : {'hotel': {'name': 'hobsons house'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Hobsons House is a guesthouse found in the west side of town . It is in the moderate price range and is rated 3 stars.
+Usr : Do they have free parking?
+
+GT  : {'hotel': {'name': 'hobsons house'}}
+PR  : {'hotel': {'name': 'hobsons house', 'parking': 'yes'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Yes hobsons house has both free internet and parking. Would you like to book a room?
+Usr : Can I please get their postcode?
+
+GT  : {'hotel': {'name': 'hobsons house'}}
+PR  : {'hotel': {'name': 'hobsons house', 'parking': 'yes'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Yes, of course! It is cb39lh.
+Usr : I also need a train that should depart from kings lynn and should go to cambridge.
+
+GT  : {'hotel': {'name': 'hobsons house'}, 'train': {'departure': 'kings lynn', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'hobsons house', 'parking': 'yes'}, 'train': {'departure': 'kings lynn', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : What day will you travel?
+Usr : I'll be traveling on Monday and need to arrive by 10:00.
+
+GT  : {'hotel': {'name': 'hobsons house'}, 'train': {'arriveby': '10:00', 'day': 'monday', 'departure': 'kings lynn', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'hobsons house', 'parking': 'yes'}, 'train': {'arriveby': '10:00', 'day': 'monday', 'departure': 'kings lynn', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : The TR0942 Leaves Kings Lynn at 9:11 and arrives in Cambridge at 9:58. Would you like to book a reservation?
+Usr : Yes can I book it for 8 people?
+
+GT  : {'hotel': {'name': 'hobsons house'}, 'train': {'arriveby': '10:00', 'people': '8', 'day': 'monday', 'departure': 'kings lynn', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'hobsons house', 'parking': 'yes'}, 'train': {'arriveby': '10:00', 'people': '8', 'day': 'monday', 'departure': 'kings lynn', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : You're all set!  Your reference # is 2PFFJ67J.  Total cost is 78.40 GBP, payable at the station.  Can I help you with anything else today?
+Usr : No, thank you. I have everything I need.
+
+GT  : {'hotel': {'name': 'hobsons house'}, 'train': {'arriveby': '10:00', 'people': '8', 'day': 'monday', 'departure': 'kings lynn', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'hobsons house', 'parking': 'yes'}, 'train': {'arriveby': '10:00', 'people': '8', 'day': 'monday', 'departure': 'kings lynn', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

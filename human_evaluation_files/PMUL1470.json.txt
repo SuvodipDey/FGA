@@ -1,0 +1,82 @@
+Dialogue ID : PMUL1470.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I'm looking for a train from Cambridge please.
+
+GT  : {'train': {'departure': 'cambridge'}}
+PR  : {'train': {'departure': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Where are you traveling to?
+Usr : I am leaving from Cambridge going to london kings cross.
+
+GT  : {'train': {'departure': 'cambridge', 'destination': 'london kings cross'}}
+PR  : {'train': {'departure': 'cambridge', 'destination': 'london kings cross'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have several trains available.  What day would like to leave and what are your preferred arrival and departure times?
+Usr : I would like to leave on sunday and leave after 19:45.
+
+GT  : {'train': {'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+PR  : {'train': {'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : I have a train that leaves at 21:00 and arrives  at 21:51. Would you like me to book this for you?
+Usr : Sure, please book that for me, thanks. Oh, and I'm also looking for places in town to visit, particularly theatre venues.
+
+GT  : {'attraction': {'type': 'theatre'}, 'train': {'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+PR  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : How many tickets did you need for the booking?
+Usr : 1 should be fine. also find me a theatre. i need the area, postcode, and phone number
+
+GT  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+PR  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Booking was successful, the total fee is 18.88 GBP payable at the station . Reference number is : 9USR2RCX. Where would you like the theater to be?
+Usr : It depends on what theatre you recommend.
+
+GT  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+PR  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : How about the mumford theatre in the centre?
+Usr : That sounds great. Can you get me the postcode and phone number for it?
+
+GT  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Yes, Mumford Theatre is in the town centre at post code cb11pt.  The phone number is 08451962320.  Can I help with anything else today?
+Usr : That is everything, thank you.
+
+GT  : {'attraction': {'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+PR  : {'attraction': {'name': 'mumford theatre', 'type': 'theatre'}, 'train': {'people': '1', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '19:45'}}
+
+Matched : False
+
+----------------------

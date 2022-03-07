@@ -1,0 +1,42 @@
+Dialogue ID : SNG01937.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need a taxi please. I'll be departing from grafton hotel restaurant
+
+GT  : {'taxi': {'departure': 'grafton hotel restaurant'}}
+PR  : {'taxi': {'departure': 'grafton hotel restaurant'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure! when would you like to arrive?
+Usr : I need to leave after 16:45.
+
+GT  : {'taxi': {'departure': 'grafton hotel restaurant', 'leaveat': '16:45'}}
+PR  : {'taxi': {'departure': 'grafton hotel restaurant', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : May I ask your destination?
+Usr : I would like to get to the Jinling Noodle Bar.
+
+GT  : {'taxi': {'departure': 'grafton hotel restaurant', 'destination': 'jinling noodle bar', 'leaveat': '16:45'}}
+PR  : {'taxi': {'departure': 'grafton hotel restaurant', 'destination': 'jinling noodle bar', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Perfect! Your booking has been completed. You will be picked up by a grey honda. The contact number is 07364310487. Is there anything else I can help you with?
+Usr : Nope, that'll do for now. Thank you!
+
+GT  : {'taxi': {'departure': 'grafton hotel restaurant', 'destination': 'jinling noodle bar', 'leaveat': '16:45'}}
+PR  : {'taxi': {'departure': 'grafton hotel restaurant', 'destination': 'jinling noodle bar', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------

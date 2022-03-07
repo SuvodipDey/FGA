@@ -1,0 +1,72 @@
+Dialogue ID : PMUL0410.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I'm looking for an expensive restaurant that serves Moroccan food in Cambridge please.
+
+GT  : {'restaurant': {'food': 'moroccan', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'food': 'moroccan', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I'm sorry, there are no expensive Moroccan restaurants in Cambridge.
+Usr : Ok, how about Chinese food then?
+
+GT  : {'restaurant': {'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : There are several. If you don't have a preference as to where in town you eat, might I suggest the good luck chinese food takeaway?
+Usr : Is it in the expensive range?
+
+GT  : {'restaurant': {'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Yes it is. Would you like me to send you their address?
+Usr : Can you book me a table for one on Friday at 13:45? I will need the reference number as well.
+
+GT  : {'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Booking was successful. The table will be reserved for 15 minutes. Reference number is : MM5BYTYE. Do you need anything else?
+Usr : Yes, please. I'm looking for a hotel on the east side.
+
+GT  : {'hotel': {'area': 'east'}, 'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'area': 'east'}, 'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : There are several, do you have any other preferences like price range or rating?
+Usr : I would like it to be in the Expensive range.
+
+GT  : {'hotel': {'area': 'east', 'pricerange': 'expensive'}, 'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'area': 'east', 'pricerange': 'expensive'}, 'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : There is one expensive hotel on the east side. It is the express by holiday inn cambridge. Would you like me to book that for you?
+Usr : Yes, I'd like to book that for one person. It will need to be on Friday and I'll stay for three nights.
+
+GT  : {'hotel': {'area': 'east', 'day': 'friday', 'people': '1', 'stay': '3', 'name': 'express by holiday inn cambridge', 'pricerange': 'expensive'}, 'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'area': 'east', 'day': 'friday', 'people': '1', 'stay': '3', 'name': 'express by holiday inn cambridge', 'pricerange': 'expensive'}, 'restaurant': {'day': 'friday', 'people': '1', 'time': '13:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------

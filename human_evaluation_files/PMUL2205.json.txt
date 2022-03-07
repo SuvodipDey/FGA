@@ -1,0 +1,85 @@
+Dialogue ID : PMUL2205.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you help me find a moderately priced Indian restaurant?
+
+GT  : {'restaurant': {'food': 'indian', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'food': 'indian', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Curry prince is available, would you like to try that?
+Usr : That sounds good.  Where is it located?  I was looking for somewhere in the east.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : curry prince is located in the east section of town!  What day and time can I make your reservations for?
+Usr : I think I would just like to get the postcode, address and phone number to contact them myself.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Sure! The postcode is cb58jj, address is 451 Newmarket Road Fen Ditton and the phone # is 01223566388. Enjoy your dining experience!
+Usr : Thanks you, Im think of doing something after I eat, are there any good entertainment places in the east area?
+
+GT  : {'attraction': {'area': 'east', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'area': 'east', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Yes, there are quite a few good places.  Was there a certain type of entertainment you were interested in?
+Usr : The attraction type is entertainment, in the east area, please.
+
+GT  : {'attraction': {'area': 'east', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'area': 'east', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I found two attractions that match your request: Cherry Hinton Hall and Grounds and  Funky Fun House.
+Usr : Cherry Hinton Hall sounds good can I get the phone number, address, and postcode.
+
+GT  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : The Cherry Hinton Hall and Grounds is on Cherry Hinton Road.  Their phone number is 01223446104 and the postcode is cb18dw.
+Usr : Thank you. I will also need a taxi between the two places that leaves the restaurant by 09:15.
+
+GT  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}, 'taxi': {'departure': 'curry prince', 'destination': 'cherry hinton village centre', 'leaveat': '09:15'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}, 'taxi': {'departure': 'curry prince', 'leaveat': '09:15'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Booking completed!
+Booked car type	:	red skoda
+Contact number	:	07396377066
+Can I help you with anything else?
+Usr : Nope, that's it. Thank you. Bye now
+
+GT  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}, 'taxi': {'departure': 'curry prince', 'destination': 'cherry hinton village centre', 'leaveat': '09:15'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'restaurant': {'area': 'east', 'food': 'indian', 'name': 'curry prince', 'pricerange': 'moderate'}, 'taxi': {'departure': 'curry prince', 'leaveat': '09:15'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,62 @@
+Dialogue ID : PMUL2272.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi there. Can you help me pick out a restaurant?
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I am able to, do you have an area, price range, or food type you'd like to try?
+Usr : I would like to dine in a cheap chinese food restaurant that is located in the south. Can you help me find one?
+
+GT  : {'restaurant': {'area': 'south', 'food': 'chinese', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'south', 'food': 'chinese', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : The Lucky Star sounds perfect for you. Would you like me to make a booking?
+Usr : No, can you please give the address and phone number for the Lucky Star. Thanks so much.
+
+GT  : {'restaurant': {'area': 'south', 'food': 'chinese', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'south', 'food': 'chinese', 'name': 'the lucky star', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Yes of course. The Lucky Star's address is Cambridge Leisure Park Clifton Way Cherry Hinton and their phone number is 01223244277.
+Usr : I am also looking for place to visit in the same area as the restaurant.
+
+GT  : {'attraction': {'area': 'south'}, 'restaurant': {'area': 'south', 'food': 'chinese', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'south'}, 'restaurant': {'area': 'south', 'food': 'chinese', 'name': 'the lucky star', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : There quite a few attractions in the area. Is there one in particular you're interested in - maybe a museum? nightclub? cinema?
+Usr : Can you make a suggestion and provide the type, phone, and address?
+
+GT  : {'attraction': {'area': 'south'}, 'restaurant': {'area': 'south', 'food': 'chinese', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'south'}, 'restaurant': {'area': 'south', 'food': 'chinese', 'name': 'the lucky star', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Sure!  The Cineworld Cinema is a cinema in the south.  Their phone is 00872208000.  Their address is Cambridge Leisure Park, Clifton Way.
+Usr : Great! Thanks! That's all I need for now.
+
+GT  : {'attraction': {'area': 'south'}, 'restaurant': {'area': 'south', 'food': 'chinese', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'south'}, 'restaurant': {'area': 'south', 'food': 'chinese', 'name': 'the lucky star', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------

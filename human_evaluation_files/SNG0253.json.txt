@@ -1,0 +1,22 @@
+Dialogue ID : SNG0253.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a train to Cambridge on Saturday.
+
+GT  : {'train': {'arriveby': '20:54', 'day': 'saturday', 'destination': 'cambridge'}}
+PR  : {'train': {'day': 'saturday', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : certainly, do you know from where you will be departing, and at what time?
+Usr : I will depart at Birmingham New Street and should arrive by 11:30. Can you help me with this?
+
+GT  : {'train': {'arriveby': '11:30', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'train': {'arriveby': '11:30', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------

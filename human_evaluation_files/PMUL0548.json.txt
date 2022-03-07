@@ -1,0 +1,62 @@
+Dialogue ID : PMUL0548.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello, I'd like some information on a restaurant.
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Do you have a certain cuisine or area in mind?
+Usr : I want british food. In the east, please.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'british'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'british'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : The Graffton Hotel Restaurant is in the east and serves British food.  It's location is 619 Newmarket Rd. Fen Ditton.
+Usr : I will need it for Saturday, 7 people at 17:45 please.
+
+GT  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'grafton hotel restaurant'}}
+PR  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'graffiti'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I have successfully booked a table for 7 on Saturday at 17:45 for you. The table will be reserved for 15 minutes and your reference number is R8CV0HU9.
+Usr : I am also looking for a train on sunday.
+
+GT  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'grafton hotel restaurant'}, 'train': {'day': 'sunday'}}
+PR  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'graffiti'}, 'train': {'day': 'sunday'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I can help you with that.  Can you please tell me what station you will be leaving from and your destination.  Also a time preference.
+Usr : I'll be leaving Sunday from Cambridge and heading to Birmingham New Street.  I need to arrive by 19:15.  I need to book this for 7 people.  Rererence number?
+
+GT  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'grafton hotel restaurant'}, 'train': {'arriveby': '19:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'birmingham new street'}}
+PR  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'graffiti'}, 'train': {'arriveby': '19:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'birmingham new street'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : You are booked on TR2776, with the reference number D1P5X7FS. The total fee is 420.56 GBP payable at the station. Is there anything else?
+Usr : Thank you so much. That's all I need today.
+
+GT  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'grafton hotel restaurant'}, 'train': {'arriveby': '19:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'birmingham new street'}}
+PR  : {'restaurant': {'area': 'east', 'day': 'saturday', 'people': '7', 'time': '17:45', 'food': 'british', 'name': 'graffiti'}, 'train': {'arriveby': '19:15', 'people': '7', 'day': 'sunday', 'departure': 'cambridge', 'destination': 'birmingham new street'}}
+
+Matched : False
+
+----------------------

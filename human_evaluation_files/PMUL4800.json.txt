@@ -1,0 +1,82 @@
+Dialogue ID : PMUL4800.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello, I am looking for a restaurant in the east that serves Indian food.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 4 results. Is a moderate or expensive price range better?
+Usr : How about the moderate price range.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : There are 2 restaurants that meet your criteria - Curry Prince and Rajmahal
+Usr : Can I get the address and postcode for Rajmahal please?
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Certainly! The address is 7 Barnwell Road Fen Ditton and the post code is, cb58rg. Can I assist with a reservation?
+Usr : No, but I am also looking for a train. The train should go to cambridge and should arrive by 12:30.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Where will you be departing form and what day will you be traveling?
+Usr : I am leaving on Tuesday from birmingham new street.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : TR4373 will arrive at 12:23. Would you like a ticket?
+Usr : Yes, I do need a ticket.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'people': '1', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Okay, I have your ticket booked!  I have your reference number.  G033HRD0.  You can pay 75.09 GBP at the station.  Anything else I can help you with?
+Usr : Can you please tell what time the train leaves and the total travel time?
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'people': '1', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : is leaves the station at 09:40 and will get you there by 12:23 and the total travel time is 163 minutes
+Usr : Great.  Thanks for all your help.  Bye.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'people': '1', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'restaurant': {'area': 'east', 'food': 'indian', 'name': 'rajmahal', 'pricerange': 'moderate'}, 'train': {'arriveby': '12:30', 'day': 'tuesday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

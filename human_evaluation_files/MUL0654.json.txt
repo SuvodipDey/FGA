@@ -1,0 +1,92 @@
+Dialogue ID : MUL0654.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking to get on a train that departs from Ely on Thursday
+
+GT  : {'train': {'day': 'thursday', 'departure': 'ely'}}
+PR  : {'train': {'day': 'thursday', 'departure': 'ely'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 10 results of trains departing from Ely on Thursday. All are destined for Cambridge. Do you have any specific times that you would like me to look up?
+Usr : The train should leave at 18:45
+
+GT  : {'train': {'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '18:45'}}
+PR  : {'train': {'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : There's a train at 19:35 arriving Cambridge at 19:52. Would you like me to book it for you?
+Usr : Is there any train leaving sooner?
+
+GT  : {'train': {'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '16:00'}}
+PR  : {'train': {'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : No, there is not.
+Usr : Okay go ahead and book the one for 19:35. I also need a hotel on the cheap side.
+
+GT  : {'train': {'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'hotel': {'pricerange': 'cheap'}, 'train': {'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : How many tickets will you be needing for the train?
+Usr : just 1
+
+GT  : {'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'hotel': {'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Okay I have booked your train. What part of town would you like to stay in?
+Usr : the center
+
+GT  : {'hotel': {'area': 'centre', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'hotel': {'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Hi I recommend alexander bed and breakfast, a cheap 4 star restaurant in the center. Do you want me to book it for you ?
+Usr : Does it have free parking?
+
+GT  : {'hotel': {'area': 'centre', 'parking': 'yes', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'hotel': {'name': 'alexander bed and breakfast', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Yes it does. Can I book it for you?
+Usr : Yes, please. 5 people for 4 nights starting the same day as the train
+
+GT  : {'hotel': {'area': 'centre', 'day': 'thursday', 'people': '5', 'stay': '4', 'parking': 'yes', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '5', 'stay': '4', 'name': 'alexander bed and breakfast', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : You're all ready to go! The reference number is BH58JXS3.
+Usr : That you, that's all I need.
+
+GT  : {'hotel': {'area': 'centre', 'day': 'thursday', 'people': '5', 'stay': '4', 'parking': 'yes', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'hotel': {'day': 'thursday', 'people': '5', 'stay': '4', 'name': 'alexander bed and breakfast', 'pricerange': 'cheap'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'ely', 'leaveat': '18:45'}}
+
+Matched : False
+
+----------------------

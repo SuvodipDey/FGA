@@ -1,0 +1,92 @@
+Dialogue ID : PMUL0630.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I would like for you to find a train that leaves on wednesday after 16:45.
+
+GT  : {'train': {'day': 'wednesday', 'leaveat': '16:45'}}
+PR  : {'train': {'day': 'wednesday', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Okay, let me look that up for you. Do you have a destination or a departure site?
+Usr : I'm going to cambridge from leicester.
+
+GT  : {'train': {'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'train': {'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : The TR1745 leaves Cambridge at 17:21 and gets into Leicester by 19:06. Will that work for you?
+Usr : Yes, that will work. For 4 people, please.
+
+GT  : {'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Reference number is : Y9AWF9YJ. Will you need anything else?
+Usr : Do you think you can find me a great italian food place. I want something really fancy. It's for an anniversary dinner.
+
+GT  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'restaurant': {'food': 'italian'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : there are 5 in town. did you have a certain part of town you want to dine in? i have some in the centre and south.
+Usr : Out of the 5, how many are expensive? I would like an expensive restaurant location doesn't matter to much.
+
+GT  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : They are all expensive.
+Usr : How about an Italian joint?
+
+GT  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Ok I suggest clowns cafe it is expensive and located in the centre. They serve italian food.
+Usr : perfect, what is their phone #
+
+GT  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'restaurant': {'food': 'italian', 'name': 'clowns cafe', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : The phone number is 01223355711. Would you like me to book reservations for that?
+Usr : Not at this time, thank you.
+
+GT  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'restaurant': {'food': 'italian', 'name': 'clowns cafe', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Is there anything else I can do for you today?
+Usr : No thank you that will be all! Bye!
+
+GT  : {'restaurant': {'food': 'italian', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+PR  : {'restaurant': {'food': 'italian', 'name': 'clowns cafe', 'pricerange': 'expensive'}, 'train': {'people': '4', 'day': 'wednesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '16:45'}}
+
+Matched : False
+
+----------------------

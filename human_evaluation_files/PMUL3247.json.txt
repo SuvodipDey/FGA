@@ -1,0 +1,72 @@
+Dialogue ID : PMUL3247.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you get me information on a hotel called huntingdon marriott hotel?
+
+GT  : {'hotel': {'name': 'huntingdon marriott hotel'}}
+PR  : {'hotel': {'name': 'huntingdon marriott hotel'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure! It is an expensive 4-star hotel in the West area of town with internet and parking. It is on Kingfisher Way, in the Hinchinbrook Business Park in Huntingdon.
+Usr : Sound like a decent enough place. Would you be able to reserve me a room for Monday?
+
+GT  : {'hotel': {'area': 'west', 'day': 'monday', 'internet': 'yes', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '4'}}
+PR  : {'hotel': {'day': 'monday', 'name': 'huntingdon marriott hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Yes, I can definitely help with that. How many people will be staying with you and how many days would you like to stay at this location?
+Usr : Just myself, but I need the room for 5 nights starting on Monday, please.
+
+GT  : {'hotel': {'area': 'west', 'day': 'monday', 'people': '1', 'stay': '5', 'internet': 'yes', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '4'}}
+PR  : {'hotel': {'day': 'monday', 'people': '1', 'stay': '5', 'name': 'huntingdon marriott hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Great news, your room is booked!  Please retain this reference number: 1A2F5TMH  Is there anything else I can help you with today?
+Usr : I will also need a train leaving Cambridge.
+
+GT  : {'hotel': {'area': 'west', 'day': 'monday', 'people': '1', 'stay': '5', 'internet': 'yes', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '4'}, 'train': {'departure': 'cambridge'}}
+PR  : {'hotel': {'day': 'monday', 'people': '1', 'stay': '5', 'name': 'huntingdon marriott hotel'}, 'train': {'departure': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Sure, what is your arrival information?
+Usr : I need to go to stansted airport on friday.
+
+GT  : {'hotel': {'area': 'west', 'day': 'monday', 'people': '1', 'stay': '5', 'internet': 'yes', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '4'}, 'train': {'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'hotel': {'day': 'monday', 'people': '1', 'stay': '5', 'name': 'huntingdon marriott hotel'}, 'train': {'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : We have 5 different departure times. Any time table your looking at?
+Usr : I need to be in Stansted airport by 15:30 please.
+
+GT  : {'hotel': {'area': 'west', 'day': 'monday', 'people': '1', 'stay': '5', 'internet': 'yes', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '4'}, 'train': {'arriveby': '15:30', 'people': '1', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'hotel': {'day': 'monday', 'people': '1', 'stay': '5', 'name': 'huntingdon marriott hotel'}, 'train': {'arriveby': '15:30', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : the soonest it will get you there is 10:08 your reference number is HKR1X1WG, anything else?
+Usr : I am all set.
+
+GT  : {'hotel': {'area': 'west', 'day': 'monday', 'people': '1', 'stay': '5', 'internet': 'yes', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'expensive', 'stars': '4'}, 'train': {'arriveby': '10:08', 'people': '1', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+PR  : {'hotel': {'day': 'monday', 'people': '1', 'stay': '5', 'name': 'huntingdon marriott hotel'}, 'train': {'arriveby': '15:30', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport'}}
+
+Matched : False
+
+----------------------

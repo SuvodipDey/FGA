@@ -1,0 +1,82 @@
+Dialogue ID : MUL1554.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Need restaurant in the east, expensive is what i'm looking for
+
+GT  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I have five, what type of food?
+Usr : Could you recommend one with the food type?
+
+GT  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Royal Standard is a great gastropub place.
+Usr : Excellent. Let's go with that.
+
+GT  : {'restaurant': {'area': 'east', 'food': 'gastropub', 'name': 'royal standard', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Would you like me to book it for you?
+Usr : No thanks, I need a train from Cambridge to Stevenage that arrives by 08:00 on Saturday. Is there anything like that?
+
+GT  : {'restaurant': {'area': 'east', 'name': 'royal standard', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : There is a train Id TR3259 leaving at 6.10. Do you want it.
+Usr : Yes that sounds good, albeit a bit early. Can you book tickets for 4 people on that one, please?
+
+GT  : {'restaurant': {'area': 'east', 'name': 'royal standard', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage', 'leaveat': '06:10'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Sure! It will be 40.96 total for 4 people. Can I help you with anything else?
+Usr : Yes, I just need a reference number.
+
+GT  : {'restaurant': {'area': 'east', 'name': 'royal standard', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage', 'leaveat': '06:10'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Your reference number is 5TXW2B1K.
+Usr : Great, that is all. Thanks for your help.
+
+GT  : {'restaurant': {'area': 'east', 'name': 'royal standard', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage', 'leaveat': '06:10'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Is there anything else I can help you with today?
+Usr : That is all I need. Thank you so much and have a great day.
+
+GT  : {'restaurant': {'area': 'east', 'name': 'royal standard', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage', 'leaveat': '06:10'}}
+PR  : {'restaurant': {'area': 'east', 'pricerange': 'expensive'}, 'train': {'arriveby': '08:00', 'people': '4', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'stevenage'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,72 @@
+Dialogue ID : PMUL3549.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Get me information about kettle's yard please
+
+GT  : {'attraction': {'name': 'kettles yard'}}
+PR  : {'attraction': {'name': 'kettles yard'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Certainly! Kettle's yard is a museum located on the west side of town. Their address is castle street and their phone number is 01223748100. Is there anything else?
+Usr : Do they charge an entrance fee?
+
+GT  : {'attraction': {'name': 'kettles yard'}}
+PR  : {'attraction': {'name': 'kettles yard'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : They do not charge an entrance fee. Can I help with anything else?
+Usr : Thanks, can I have the post code, please?
+
+GT  : {'attraction': {'area': 'west', 'name': 'kettles yard', 'type': 'museum'}}
+PR  : {'attraction': {'name': 'kettles yard'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Sure. The postcode is cb30aq. Is there anything else I can help you with?
+Usr : Yes, I am also looking for a train that leaves after 11:45 going to ely.
+
+GT  : {'attraction': {'area': 'west', 'name': 'kettles yard', 'type': 'museum'}, 'train': {'destination': 'ely', 'leaveat': '11:45'}}
+PR  : {'attraction': {'name': 'kettles yard'}, 'train': {'destination': 'ely', 'leaveat': '11:45'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Are you departing from Cambridge?
+Usr : Yes on thursday
+
+GT  : {'attraction': {'area': 'west', 'name': 'kettles yard', 'type': 'museum'}, 'train': {'day': 'thursday', 'departure': 'cambridge', 'destination': 'ely', 'leaveat': '11:45'}}
+PR  : {'attraction': {'name': 'kettles yard'}, 'train': {'day': 'thursday', 'departure': 'cambridge', 'destination': 'ely', 'leaveat': '11:45'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : OK, TR5216 leaves at 11:55 would you like more info or a booking?
+Usr : Can you please book me for 3 people?
+
+GT  : {'attraction': {'area': 'west', 'name': 'kettles yard', 'type': 'museum'}, 'train': {'people': '3', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'ely', 'leaveat': '11:45'}}
+PR  : {'attraction': {'name': 'kettles yard'}, 'train': {'people': '3', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'ely', 'leaveat': '11:45'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : You are all set, the reference number is V0HLEDJW, can I help with anything else?
+Usr : You have answered all my questions. I appreciate it. Goodbye.
+
+GT  : {'attraction': {'area': 'west', 'name': 'kettles yard', 'type': 'museum'}, 'train': {'people': '3', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'ely', 'leaveat': '11:45'}}
+PR  : {'attraction': {'name': 'kettles yard'}, 'train': {'people': '3', 'day': 'thursday', 'departure': 'cambridge', 'destination': 'ely', 'leaveat': '11:45'}}
+
+Matched : False
+
+----------------------

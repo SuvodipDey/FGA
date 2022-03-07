@@ -1,0 +1,72 @@
+Dialogue ID : SNG0289.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need a train to take me from Cambridge to Broxbourne.
+
+GT  : {'train': {'departure': 'cambridge', 'destination': 'broxbourne'}}
+PR  : {'train': {'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure. What time would you like to depart?
+Usr : I don't know.  I want to get there at 08:15 though.
+
+GT  : {'train': {'arriveby': '08:15', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+PR  : {'train': {'arriveby': '08:15', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Also, what day will you be travelling?
+Usr : I will be travelling on Monday.
+
+GT  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+PR  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Alright, the latest train that fits your criteria is TR3174, which will arrive at 8:01. Is that alright by you?
+Usr : Yes that will be fine thank you. Can you tell me how long the journey will be and how much it will cost and when the train leaves?
+
+GT  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+PR  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Yes travel time is 60 minutes and the cost of the ticket is 17.90 pounds.
+Usr : What is the exact departure time please?
+
+GT  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne', 'leaveat': '07:01'}}
+PR  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : The train leaves Cambridge at 07:01. Is there anything else I can help you with today?
+Usr : Can you book me a seat on the train please?
+
+GT  : {'train': {'arriveby': '08:15', 'people': '1', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne', 'leaveat': '07:01'}}
+PR  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I'd be happy to. Just one ticket or how many would you like?
+Usr : Actually, I am not ready to book quite yet.  Thank you for all of your help.  Have a nice day.  Bye.
+
+GT  : {'train': {'arriveby': '08:15', 'people': '1', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne', 'leaveat': '07:01'}}
+PR  : {'train': {'arriveby': '08:15', 'day': 'monday', 'departure': 'cambridge', 'destination': 'broxbourne'}}
+
+Matched : False
+
+----------------------

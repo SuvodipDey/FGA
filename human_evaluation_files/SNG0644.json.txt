@@ -1,0 +1,42 @@
+Dialogue ID : SNG0644.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a restaurant serving chinese food in the centre part of town.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'chinese'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'chinese'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are several chinese restaurants in the centre area. What price range are you considering?
+Usr : I am looking for something expensive.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : How about hk fusion located at 21 Burleigh Street City Centre? Would you like me to book?
+Usr : That sounds great! Yes, please! Book a table for 3 people at 15:45 on friday.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'friday', 'people': '3', 'time': '15:45', 'food': 'chinese', 'name': 'hk fusion', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'friday', 'people': '3', 'time': '15:45', 'food': 'chinese', 'name': 'hk fusion', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Booking was successful. The table will be reserved for 15 minutes. Reference number is : CDBQYMUI. Is there anything else I can help you with?
+Usr : That will be all. Thank you very much!
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'friday', 'people': '3', 'time': '15:45', 'food': 'chinese', 'name': 'hk fusion', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'friday', 'people': '3', 'time': '15:45', 'food': 'chinese', 'name': 'hk fusion', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------

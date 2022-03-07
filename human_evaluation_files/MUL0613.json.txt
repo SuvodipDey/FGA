@@ -1,0 +1,72 @@
+Dialogue ID : MUL0613.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I am looking for information about the Warkworth House hotel.
+
+GT  : {'hotel': {'name': 'warkworth house'}}
+PR  : {'hotel': {'name': 'warkworth house'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Is there anything specific you'd like to know about the Warkworth House hotel?
+Usr : I just would like to book it for 2 people, for 5 nights, beginning Monday. Please give me reference number.
+
+GT  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}}
+PR  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Your room has been booked successfully. Your confirmation number is ARWOR7QP. Would you like help with anything else?
+Usr : I am also looking to book a train to norwich.
+
+GT  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'destination': 'norwich'}}
+PR  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'destination': 'norwich'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : What day are you looking to depart?
+Usr : I would like to leave on Saturday from Cambridge to be in Norwich before 21:00.
+
+GT  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+PR  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : TR4018 leaves cambridge at 17:36 and arrives at 18:55.  May I book it for you?
+Usr : Thank you so much. So that means a 79 minute travel time? Let's go ahead and book it.
+
+GT  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+PR  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Do you need two tickets?
+Usr : Actually, I think I may book it later.  Thank you very much for all your help.
+
+GT  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+PR  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Okay! You're very welcome. To answer your earlier question, yes: the travel time is 79 minutes. Is there anything else I can help you with today?
+Usr : No, that's it. Thank you!
+
+GT  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+PR  : {'hotel': {'day': 'monday', 'people': '2', 'stay': '5', 'name': 'warkworth house'}, 'train': {'arriveby': '21:00', 'day': 'saturday', 'departure': 'cambridge', 'destination': 'norwich'}}
+
+Matched : True
+
+----------------------

@@ -1,0 +1,92 @@
+Dialogue ID : PMUL2917.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm looking for a place to stay during my upcoming trip to Cambridge.
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I can definitely help you with that! What area are you staying in, and what's your price range?
+Usr : it should be located in the west and should be cheap.
+
+GT  : {'hotel': {'area': 'west', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'west', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have two options for you, and they are both 4 stars: Finches Bed and Breakfast is a guesthouse and The Cambridge Belfry is a hotel.
+Usr : Actually, I'm sorry.  I said I wanted something cheap, but I'm actually thinking I want something expensive instead.
+
+GT  : {'hotel': {'area': 'west', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'area': 'west', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Oh, no problem.  You would love the Huntingdon Marriott Hotel.  4 stars, expensive, free everything.
+Usr : Can you book it please?
+
+GT  : {'hotel': {'area': 'west', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'area': 'west', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : For how many people. What night and how long?
+Usr : Book a 4 night stay starting Saturday for 5 people
+
+GT  : {'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+PR  : {'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Okay, the booking was successful. The reference number is TKFWTSZE. Can I help you with anything else?
+Usr : Yes. I am also looking for a concert hall to visit in the east.
+
+GT  : {'attraction': {'area': 'east', 'type': 'concert hall'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'area': 'east', 'type': 'concert hall'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : There are none would you like to try a different area?
+Usr : How about an entertainment place in the east?
+
+GT  : {'attraction': {'area': 'east', 'type': 'entertainment'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'area': 'east', 'type': 'entertainment'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : I found 2 entertainment places. Cherry Hinton Hall and Grounds and Funky Fun House both located in the east. Do you have a preference?
+Usr : give me information on cherry hinton hall and grounds
+
+GT  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 8
+Sys : It is on Cherry Hinton Road, CB18DW, and the phone number is 01223446104. Can I help you with anything else?
+Usr : That is very helpful, thanks. That's all I need for today.
+
+GT  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'area': 'east', 'name': 'cherry hinton hall and grounds', 'type': 'entertainment'}, 'hotel': {'area': 'west', 'day': 'saturday', 'people': '5', 'stay': '4', 'name': 'huntingdon marriott hotel', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------

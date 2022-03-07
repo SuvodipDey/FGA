@@ -1,0 +1,82 @@
+Dialogue ID : PMUL1330.json
+----------------------
+Turn: 0
+Sys :  
+Usr : We would like to visit a museum while we are in town.
+
+GT  : {'attraction': {'type': 'museum'}}
+PR  : {'attraction': {'type': 'museum'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Okay, that sounds fun! What area are you going to be in?
+Usr : We will be in the centre area.  What do you suggest?  Please provide phone number, postcode, and address.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have 11 museums in the Centre. I would recommend Castle Galleries, phone number 01223307402, postal code cb23bj, address unit su43, grande arcade, saint andrews street. It is free.
+Usr : Do you have any other suggestions?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : You should check out Primavera.  The phone number is 01223357708.  It is at 10 King's Parade and the postcode is cb21sj.
+Usr : I also need a train going to cambridge.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : In order to find a train I need to know where you are departing from and which day.
+Usr : I'm departing from birmingham new street on Saturday and I'd like to leave after 12:45.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '12:45'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '12:45'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : How about TR8390 that leaves birmingham new street at 13:40 on Saturday.  It arrives in cambridge at 16:23.  The price is 60.08.  Shall I book it?
+Usr : Yes, can I book that for 5 people?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'people': '5', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '13:40'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'people': '5', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '12:45'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I was able to book it, reference is 0W0BQB8W.
+Usr : Thank you very much
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'people': '5', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '13:40'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'people': '5', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '12:45'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : You're welcome! Can I help you with anything else?
+Usr : Thank you, that's all I need today.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'people': '5', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '13:40'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'train': {'people': '5', 'day': 'saturday', 'departure': 'birmingham new street', 'destination': 'cambridge', 'leaveat': '12:45'}}
+
+Matched : False
+
+----------------------

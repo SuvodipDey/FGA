@@ -1,0 +1,32 @@
+Dialogue ID : SNG01542.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Please reserve for me a taxi that will pick me up at cambridge arts theatre after 09:30
+
+GT  : {'taxi': {'departure': 'cambridge arts theatre', 'leaveat': '09:30'}}
+PR  : {'taxi': {'departure': 'cambridge arts theatre', 'leaveat': '09:30'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : And where will you be going?
+Usr : I'm going to restaurant one seven.
+
+GT  : {'taxi': {'departure': 'cambridge arts theatre', 'destination': 'restaurant 17', 'leaveat': '09:30'}}
+PR  : {'taxi': {'departure': 'cambridge arts theatre', 'destination': 'restaurant 17', 'leaveat': '09:30'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Your booking is complete, a black audi will be picking you up.
+Usr : Thank you. I need the contact number, as well.
+
+GT  : {'taxi': {'departure': 'cambridge arts theatre', 'destination': 'restaurant 17', 'leaveat': '09:30'}}
+PR  : {'taxi': {'departure': 'cambridge arts theatre', 'destination': 'restaurant 17', 'leaveat': '09:30'}}
+
+Matched : True
+
+----------------------

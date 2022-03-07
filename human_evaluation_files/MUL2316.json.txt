@@ -1,0 +1,82 @@
+Dialogue ID : MUL2316.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I want to visit some architecture.
+
+GT  : {'attraction': {'type': 'architecture'}}
+PR  : {'attraction': {'type': 'architecture'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : If you come to the centre of town there are several magnificent churches. And the Old Schools are quite impressive as well. Would you like more information about any of them?
+Usr : Is there a phone number I can get for the schools please
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : The phone number for Old Schools is 01223332320
+Usr : Thank you! I also need to find a place to eat while there.  Something expensive.
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}, 'restaurant': {'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}, 'restaurant': {'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : There are many fine expensive restaurants to choose from. Do you have a preferred cuisine?
+Usr : I'd like an italian restaurant in the centre of town.
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : We have a few of them, is there a certain area you'd like?
+Usr : I would like to dine in the centre part of town.
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : How about clowns cafe?
+Usr : Sounds good. Please book a table for 2 on Monday at 19:30.
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'day': 'monday', 'people': '2', 'time': '19:30', 'food': 'italian', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'day': 'monday', 'people': '2', 'time': '19:30', 'food': 'italian', 'name': 'clowns cafe', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I'm sorry but there is no availability for 2 people for that day and time.  Would you like to try another day or time slot?
+Usr : Could you try 18:30 instead please?
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'day': 'monday', 'people': '2', 'time': '18:30', 'food': 'italian', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'day': 'monday', 'people': '2', 'time': '18:30', 'food': 'italian', 'name': 'clowns cafe', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Booking was successful. The table will be reserved for 15 minutes. Reference number is : YM6D18G2. Is there anything else I can assist you with?
+Usr : Nope that is all I need for today. Thank you so much!
+
+GT  : {'attraction': {'name': 'school', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'day': 'monday', 'people': '2', 'time': '18:30', 'food': 'italian', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'old schools', 'type': 'architecture'}, 'restaurant': {'area': 'centre', 'day': 'monday', 'people': '2', 'time': '18:30', 'food': 'italian', 'name': 'clowns cafe', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------

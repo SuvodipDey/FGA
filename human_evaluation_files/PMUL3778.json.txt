@@ -1,0 +1,72 @@
+Dialogue ID : PMUL3778.json
+----------------------
+Turn: 0
+Sys :  
+Usr : i am looking for an expensive restaurant in the centre part of town.
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 33 expensive restaurants in the centre of town. Did you have a type of food in mind?
+Usr : Can you give me a couple of examples of different cuisines that are available?
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : There is African, Asian Oriental, British, Chinese, European, French, Gastropub, Indian, Italian, Japanese, Korean, Mediterranean, Modern European, North American, Seafood, Thai, and Turkish food available in the centre.
+Usr : Let's go with Korean. What kind of expensive Korean restaurants do you have available?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'korean', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'korean', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Little Seoul at 108 Regent Street City Centre is very good.
+Usr : That sounds good.  Could I get the postcode for Little Seoul please?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The post code for little seoul is cb21dp.
+Usr : I need the phone number and address of saint catherine's college and a taxi to commute both distance. Need to know the car type and also have the taxi number.
+
+GT  : {'attraction': {'name': 'saint catharines college'}, 'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Okay! They are at King's Parade, CB21RL. Their phone number is 01223338300. What time would you like to depart in the taxi?
+Usr : I need a taxi to commute between the two places. I need to leave the restaurant by 18:15 and need the contact # and car type
+
+GT  : {'attraction': {'name': 'saint catharines college'}, 'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}, 'taxi': {'departure': 'little seoul', 'destination': 'saint catharines college', 'leaveat': '18:15'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}, 'taxi': {'departure': 'little seoul', 'leaveat': '18:15'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I've booked your taxi. You'll be looking for a red tesla. If you need to contact the driver, the number is 07464036678. Can I do anything else for you today?
+Usr : No thank you.
+
+GT  : {'attraction': {'name': 'saint catharines college'}, 'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}, 'taxi': {'departure': 'little seoul', 'destination': 'saint catharines college', 'leaveat': '18:15'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'korean', 'name': 'little seoul', 'pricerange': 'expensive'}, 'taxi': {'departure': 'little seoul', 'leaveat': '18:15'}}
+
+Matched : False
+
+----------------------

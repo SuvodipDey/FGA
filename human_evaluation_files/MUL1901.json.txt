@@ -1,0 +1,72 @@
+Dialogue ID : MUL1901.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm planning a trip to Cambridge and I would like some information on great saint mary's church.  Where exactly is it located?
+
+GT  : {'attraction': {'name': 'great saint marys church'}}
+PR  : {'attraction': {'name': 'great saint marys church'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : It is located in the centre. The address is market square. Postcode is cb23pq. The entrance fee is 2 pounds.
+Usr : Thank you. That's all I I need.
+
+GT  : {'attraction': {'name': 'great saint marys church'}}
+PR  : {'attraction': {'name': 'great saint marys church'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Is there anything else I can help you with.
+Usr : Can I please get their phone number as well? I also need help finding a train for Monday.
+
+GT  : {'attraction': {'name': 'great saint marys church'}, 'train': {'day': 'monday'}}
+PR  : {'attraction': {'name': 'great saint marys church'}, 'train': {'day': 'monday'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Yes of course. Their telephone number is 01223350914.
+Usr : I also need a train from birmingham new street on monday that goes to cambrige by 20:30.
+
+GT  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : For how many people?
+Usr : I'm not sure yet.  For now can I just get the train ID, travel time and departure time?
+
+GT  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Train ID TR3130 sounds like your best bet.  It leaves at 17:40 and arrives in Cambridge at 20:23.  Travel time is 163 minutes.
+Usr : Thanks so much!
+
+GT  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : No problem at all! Is there anything more I can help you with today?
+Usr : Yes that's all I need thanks again. Bye.
+
+GT  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+PR  : {'attraction': {'name': 'great saint marys church'}, 'train': {'arriveby': '20:30', 'day': 'monday', 'departure': 'birmingham new street', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------

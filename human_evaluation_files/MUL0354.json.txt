@@ -1,0 +1,82 @@
+Dialogue ID : MUL0354.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello, can you tell me about the options for moderately priced dining in Cambridge that are centrally located?
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Yippee Noodle Bar (asian oriental), Restaurant One Seven (british), and The Oak Bistro (british) are all nearby
+Usr : Are there any that serve Irish food?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'irish', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'irish', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : No, sorry, there aren't any serving Irish food.
+Usr : Perhaps a gastropub?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : The cow pizza kitchen and bar would meet your request for gastropub. Would you like to book it?
+Usr : Can I have the address for cow pizza kitchen please?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The address is Corn Exchange Street.
+Usr : Thank you, I'm also looking for a train that leaves after 20:00 on a Friday.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'day': 'friday', 'leaveat': '20:00'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'day': 'friday', 'leaveat': '20:00'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : There are several trains that depart on Friday after 20:00, where are you traveling from and to?
+Usr : I'm traveling from cambridge to stansted airport.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '20:00'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '20:00'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : There are 4 trains that will work for you - leaving 20:40, 21:40, 22:40, and 23:40. Would you like to book one of those?
+Usr : Yes, can I book the 20:40 train for three people?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'people': '3', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '20:40'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'people': '3', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '20:00'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Booking was successful, your reference number is N9PDDWD8. You pay at the station 30.29 GBP.
+Usr : Great, thanks for your help.
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'people': '3', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '20:40'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'gastropub', 'name': 'cow pizza kitchen and bar', 'pricerange': 'moderate'}, 'train': {'people': '3', 'day': 'friday', 'departure': 'cambridge', 'destination': 'stansted airport', 'leaveat': '20:00'}}
+
+Matched : False
+
+----------------------

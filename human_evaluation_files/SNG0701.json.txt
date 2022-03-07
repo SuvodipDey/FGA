@@ -1,0 +1,62 @@
+Dialogue ID : SNG0701.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I would like to find an expensive restaurant in the centre of town please.
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are quite a few choices for you.  What kind of cuisine do you enjoy?
+Usr : I don't care. Choose a restaurant you recommend!
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'dontcare', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'dontcare', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : How about bedouin, an african restaurant?
+Usr : Sounds great. Could you book me a table for 8 on Wednesday at 15:30?
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'african', 'name': 'bedouin', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'dontcare', 'name': 'bedouin', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I sure can. I have a table for 8 booked for you at the bedouin, for 15:30. They will hold that for fifteen minutes.
+Usr : May I have the booking reference number?
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'african', 'name': 'bedouin', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'dontcare', 'name': 'bedouin', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Certainly, the reference number is 922YORFC.
+Usr : Thank you very much for your help.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'african', 'name': 'bedouin', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'dontcare', 'name': 'bedouin', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Is there anything else I can help you with today?
+Usr : No, that's all I need today. Thank you!
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'african', 'name': 'bedouin', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '8', 'time': '15:30', 'food': 'dontcare', 'name': 'bedouin', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------

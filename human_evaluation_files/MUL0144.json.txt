@@ -1,0 +1,82 @@
+Dialogue ID : MUL0144.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for suggestions for a cheaper restaurant in the center of town.
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I have several listings available for you to choose from, is there any preference on the type of  food they serve for you?
+Usr : Not really. Just get me a table for  3 on Tuesday at 17:00
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '17:00', 'food': 'dontcare', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '17:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Would you like me to book you a table at Dojo Noodle Bar at 40210 Millers Yard City Centre for Tuesday at 17:00 for 3 people?
+Usr : Yes please, if that time doesn't work, we can try for 16:00.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'food': 'dontcare', 'name': 'dojo noodle bar', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Your booking for 3 at the Dojo Noodle Bar for Tuesday at 16:00. Your reference number is V65S4LW2.
+Usr : I also need a hotel with free parking and free wifi.
+
+GT  : {'hotel': {'internet': 'yes', 'parking': 'yes'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'food': 'dontcare', 'name': 'dojo noodle bar', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'internet': 'yes', 'parking': 'yes'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : What area of town and price range would you prefer?
+Usr : I prefer a guesthouse, and I need someplace cheap, please. Area doesn't matter.
+
+GT  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'food': 'dontcare', 'name': 'dojo noodle bar', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : I have several options here. I would recommend Finches Bed and Breakfast thats located in the west. Would you like more info or would you prefer something different?
+Usr : Could you tell me the star of the hotel?
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'parking': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'food': 'dontcare', 'name': 'dojo noodle bar', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'name': 'finches bed and breakfast', 'parking': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Finches has a 4 star rating. Would you like me to go ahead and book that for you?
+Usr : No thank you, that is all.
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'parking': 'yes', 'pricerange': 'cheap', 'stars': '4', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'food': 'dontcare', 'name': 'dojo noodle bar', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'name': 'finches bed and breakfast', 'parking': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Thank you for using our service. Is there any further assistance you need?
+Usr : No thanks. That's all I needed. Have a great day!
+
+GT  : {'hotel': {'area': 'west', 'internet': 'yes', 'name': 'finches bed and breakfast', 'parking': 'yes', 'pricerange': 'cheap', 'stars': '4', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'food': 'dontcare', 'name': 'dojo noodle bar', 'pricerange': 'cheap'}}
+PR  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'name': 'finches bed and breakfast', 'parking': 'yes', 'pricerange': 'cheap', 'type': 'guest house'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '3', 'time': '16:00', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,72 @@
+Dialogue ID : MUL0814.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you help me find a place to eat? I am looking for a place that serves cheap corsica food.
+
+GT  : {'restaurant': {'food': 'corsica', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'food': 'corsica', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I'm sorry, we have no cheap corsica eateries. Care to try anything else?
+Usr : Tell me some restaurant types in the town centre?
+
+GT  : {'restaurant': {'area': 'centre', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'corsica', 'pricerange': 'cheap'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : There's Chinese, Indian, Italian, Mediterranean, and Spanish, there's a few others if none of those sound appealing.
+Usr : Could you please find me an italian restaurant in the centre?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'italian', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Of course! I have three: Pizza Hut City Centre, Ask, and Zizzi Cambridge. Would you like to book one of these?
+Usr : Yes, can you book a table for 1 at Zizzi Cambridge? I would like to go at 11:15 on tuesday.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : yes certainly. I have you booked on Tuesday at 11:15 and your reference number for the booking is LMJ96HRL.
+Usr : I would also like to find an attraction to go to after the meal in the same part of town.
+
+GT  : {'attraction': {'area': 'centre'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I have a few meseums,  Theatre, Collages..What do you have inmind?
+Usr : A museum sounds good can I get the phone number and entrance fee of one?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Broughton House Gallery is free. Their phone number is 01223314960.
+Usr : Great, thank you! That's all I'll need for today.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'restaurant': {'area': 'centre', 'day': 'tuesday', 'people': '1', 'time': '11:15', 'food': 'italian', 'name': 'zizzi cambridge', 'pricerange': 'cheap'}}
+
+Matched : True
+
+----------------------

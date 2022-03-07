@@ -1,0 +1,82 @@
+Dialogue ID : PMUL1137.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I want to find a nightclub.
+
+GT  : {'attraction': {'type': 'nightclub'}}
+PR  : {'attraction': {'type': 'nightclub'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 6 nightclubs in the centre. Would you like a recommendation?
+Usr : May I please have the postcode, and entrance fees for the nightclubs?
+
+GT  : {'attraction': {'type': 'nightclub'}}
+PR  : {'attraction': {'type': 'nightclub'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : My favorite is Club Salsa.  It is located in postcode cb12jb and costs 5 pounds to enter.  Can I help you further today?
+Usr : Actually, yes. I'm looking for a train from ely.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'train': {'departure': 'ely'}}
+PR  : {'attraction': {'type': 'nightclub'}, 'train': {'departure': 'ely'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : Okay, where is your destination?
+Usr : My destination is Cambridge and I would like to arrive by 11:30 on Thursday.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : We have 3 trains that will get you to Cambridge before 11:30.  A departure time of 05:52, 07:35, & 09:35.  Which would work best for you?
+Usr : The one for 7:35 is fine. Can I get the ID # and price, too?
+
+GT  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '07:35'}}
+PR  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : The ID is TR7745.
+Usr : Thank you. Have a good day.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '07:35'}}
+PR  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Is there anything else you need?
+Usr : I still need the price for the train.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '07:35'}}
+PR  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : The price is 4.40 pounds.
+Usr : thanks so much for everything today, you have been very helpful
+
+GT  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge', 'leaveat': '07:35'}}
+PR  : {'attraction': {'type': 'nightclub'}, 'train': {'arriveby': '11:30', 'day': 'thursday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,102 @@
+Dialogue ID : PMUL2708.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I need to find a hotel that has free parking.
+
+GT  : {'hotel': {'parking': 'yes'}}
+PR  : {'hotel': {'parking': 'yes', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : Sure I can help with that. What area will you be staying in?
+Usr : In the centre, I more specifically am looking for a guesthouse with a 0 star rating in that area.
+
+GT  : {'hotel': {'area': 'centre', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'centre', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : El Shaddai is a 0 star guesthouse located in the centre has both free parking and wifi. What days are you interested in staying there? can I book for you?
+Usr : Yes please. book it for 5 people and 3 nights starting from tuesday
+
+GT  : {'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Okay, will you be needing a reference number?
+Usr : Yes, please for my records
+
+GT  : {'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I have your reservation for 5 people, 3 nights starting on tuesday.  your reference number is X3MDWDWY, can I help with anything else?
+Usr : Yes, I am interested in places to go while I am in town. Perhaps a museum in the same area as the hotel.
+
+GT  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : I have about 11 different museums. If I may, might I suggest the Scott Polar Museum on Lensfield Road. They also have free entrance. It's a great place to visit.
+Usr : Sure, what is the address for this museum?  Thanks for your help!
+
+GT  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : The museum is on lensfield road post code cb21er and it's number is 01223336540.
+Usr : Would it be possible to book a taxi to get from the hotel to the museum?  We would like to leave the hotel at 6:00.
+
+GT  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : I have your taxi booked.  What else can I do?
+Usr : Well, do I look for a specific make and color car or just jump into a random one?  Does the driver have a phone number?
+
+GT  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : you have been assigned a specific car.
+Usr : well what is it? This is ridiculous! Your very rude
+
+GT  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : I apologize. I did not mean to come off as rude. You should expect a white Volvo. If you need to reach the company, please call 07499481174.
+Usr : Thank you! Have a wonderful day!
+
+GT  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'internet': 'yes', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'scott polar museum', 'type': 'museum'}, 'hotel': {'area': 'centre', 'day': 'tuesday', 'people': '5', 'stay': '3', 'name': 'el shaddia guesthouse', 'parking': 'yes', 'stars': '0', 'type': 'guest house'}, 'taxi': {'departure': 'el shaddia guesthouse', 'destination': 'scott polar museum', 'leaveat': '06:00'}}
+
+Matched : False
+
+----------------------

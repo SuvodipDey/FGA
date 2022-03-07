@@ -1,0 +1,72 @@
+Dialogue ID : MUL0570.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello, do you know of any points of interest in the centre of Cambridge?
+
+GT  : {'attraction': {'area': 'centre'}}
+PR  : {'attraction': {'area': 'centre'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are 44 attractions in the center of town. What types are you interested in?
+Usr : I'm not sure. What types of attractions are there?
+
+GT  : {'attraction': {'area': 'centre'}}
+PR  : {'attraction': {'area': 'centre'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : You could visit a church or college.  There are also 8 museums that are free of charge to enter.
+Usr : I would like to visit a college. May I have the entrance fee and postcard?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'college'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : There is christ's college, which has a free entrance fee. Their postcode is cb23bu.
+Usr : Can I have information for a train departing from Ely? I'm looking to arrive in Cambridge by about 15:15 on Tuesday.
+
+GT  : {'attraction': {'area': 'centre'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : TR3412 will arrive around 11:52 on Tuesday if you're interested in that.
+Usr : I'll take it for just me what is the travel time, and the price please?
+
+GT  : {'attraction': {'area': 'centre'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : The travel time is 17 minutes and the price is 4.40 GBP.
+Usr : Great thank you I think I have all the information I need
+
+GT  : {'attraction': {'area': 'centre'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Would you like me to book that train for you?
+Usr : No thank you. Appreciate the help!
+
+GT  : {'attraction': {'area': 'centre'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'arriveby': '15:15', 'day': 'tuesday', 'departure': 'ely', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

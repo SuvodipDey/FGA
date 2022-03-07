@@ -1,0 +1,112 @@
+Dialogue ID : MUL2155.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am looking for a place to stay in the north of the city.  I would prefer a 4 star hotel please.
+
+GT  : {'hotel': {'area': 'north', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'north', 'stars': '4', 'type': 'hotel'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are several guesthouses available.  Do you have a price reference?
+Usr : No price preference needed
+
+GT  : {'hotel': {'area': 'north', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'north', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : The home from home guesthouse hotel is located in the north, has a 4 star rating, and is moderately priced. Would you like me to book it for you?
+Usr : Does it have free wifi?
+
+GT  : {'hotel': {'area': 'north', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'north', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : How about the Avalon guesthouse?
+Usr : I think that would be fine.
+
+GT  : {'hotel': {'area': 'north', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : What day would you like to stay? How many days?
+Usr : I would like it book for Sunday for 5 people and 3 nights. Can I have the booking number please.
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : The hotel is booked and your reference number is 0DJU3C37.  Can I help you with anything else?
+Usr : I also need a train that departs from cambridge.
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}, 'train': {'departure': 'cambridge'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'departure': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : What is your desired destination?
+Usr : I would like to visit Leicester on Wednesday.
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}, 'train': {'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : There are 19 trains to Leicester on that day. Do you know what time you'd like to leave or arrive by?
+Usr : I need to be in Leicester by 19:15.
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Train TR1745 will get you there by 19:06. Do you want tickets for that?
+Usr : I need the departure time for that train.
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : No problem!  The departure time for TR1745 is 17:21.  Will that work?
+Usr : What is the price for that train?
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------
+Turn: 10
+Sys : It is 37.80 pounds per person.
+Usr : Thank you, I think that is all I need for today.
+
+GT  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'avalon', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+PR  : {'hotel': {'area': 'north', 'day': 'sunday', 'people': '5', 'stay': '3', 'name': 'home from home', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '19:15', 'day': 'wednesday', 'departure': 'cambridge', 'destination': 'leicester'}}
+
+Matched : False
+
+----------------------

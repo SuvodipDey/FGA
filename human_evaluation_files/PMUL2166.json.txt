@@ -1,0 +1,112 @@
+Dialogue ID : PMUL2166.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I'm looking for a nightclub in town please.
+
+GT  : {'attraction': {'type': 'nightclub'}}
+PR  : {'attraction': {'type': 'nightclub'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : There are several nightclubs in town. I recommend ballare. It is found in the center of town.
+Usr : Okay, could you tell me he postcode and the entrance fee?
+
+GT  : {'attraction': {'type': 'nightclub'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Sure thing! Entry fee is 5 pounds and postcode is cb23na.
+Usr : I would also like to eat in the center of town.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : We have many dining options available in city centre. Do you have a price range or style of food you would prefer?
+Usr : Are there any steakhouses in the centre?
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'steakhouse'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'steakhouses'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Unfortunately not. Do you want to broaden your search?
+Usr : Can you find something with italian food instead?
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'italian'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'italian'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Oh, great choice. I love Italian too. There are several options. How about Zizzi Cambridge?
+Usr : That sounds great, what's the price range for Zizzi Cambridge?
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'zizzi cambridge'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'zizzi cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Zizzi Cambridge is relatively cheap, but the food is sublime. Would you like me to book it for you?
+Usr : That sounds great, please do.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'zizzi cambridge'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'food': 'italian', 'name': 'zizzi cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : I'd be happy to. Can you tell me a date, time and how many people in your party?
+Usr : It will just be for me on Wednesday. I would like it to be for around 4pm.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '16:00', 'food': 'italian', 'name': 'zizzi cambridge'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '17:00', 'food': 'italian', 'name': 'zizzi cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Booking was successful. The table will be reserved for 15 minutes.  Your Reference number is : UWZS9JSU.
+Usr : I would love a taxi
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '16:00', 'food': 'italian', 'name': 'zizzi cambridge'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '17:00', 'food': 'italian', 'name': 'zizzi cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : I can help with that. What is your departure site, destination, and the time you need it?
+Usr : I want to depart the restaurant at 05:00 to go to the attraction
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '16:00', 'food': 'italian', 'name': 'zizzi cambridge'}, 'taxi': {'departure': 'zizzi cambridge', 'destination': 'ballare', 'leaveat': '05:00'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '17:00', 'food': 'italian', 'name': 'zizzi cambridge'}, 'taxi': {'departure': 'zizzi cambridge', 'destination': 'ballare', 'leaveat': '05:00'}}
+
+Matched : False
+
+----------------------
+Turn: 10
+Sys : A yellow Tesla will pick you up, and the contact number is 07267272725. Can I help with anything else today?
+Usr : No, I believe that's all I need today. Thanks for your help.
+
+GT  : {'attraction': {'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '16:00', 'food': 'italian', 'name': 'zizzi cambridge'}, 'taxi': {'departure': 'zizzi cambridge', 'destination': 'ballare', 'leaveat': '05:00'}}
+PR  : {'attraction': {'name': 'ballare', 'type': 'nightclub'}, 'restaurant': {'area': 'centre', 'day': 'wednesday', 'people': '1', 'time': '17:00', 'food': 'italian', 'name': 'zizzi cambridge'}, 'taxi': {'departure': 'zizzi cambridge', 'destination': 'ballare', 'leaveat': '05:00'}}
+
+Matched : False
+
+----------------------

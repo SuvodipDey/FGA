@@ -1,0 +1,93 @@
+Dialogue ID : PMUL1949.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you help me find a place to stay that has a 4 star rating?
+
+GT  : {'hotel': {'stars': '4'}}
+PR  : {'hotel': {'stars': '4'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I can certainly help you with that. Do you have a preferred price range or area?
+Usr : Thank you. I am looking for a hotel in the west part of town.
+
+GT  : {'hotel': {'area': 'west', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'west', 'stars': '4'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : I have 3 in west - two are cheap and one is expensive. Preference on price?
+Usr : I do not have a preference on price as long as it has a 4 star rating and is a hotel.
+
+GT  : {'hotel': {'area': 'west', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'west', 'stars': '4', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I would suggest the Huntingdon Marriott Hotel.  It is very nice.  Can I get you some information on it?
+Usr : yeah, can you let me know if it has free parking?
+
+GT  : {'hotel': {'area': 'west', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'west', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'stars': '4', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Parking and internet are both included, would you like me to book you?
+Usr : Yes, please book for 1 person for 4 nights starting from Thursday.
+
+GT  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'stars': '4', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Your booking was successful.
+Reference number is : 6I8873PA.  Is there anything else I can assist you with today?
+Usr : That's all.  Thanks
+
+GT  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}}
+PR  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'stars': '4', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Thanks so much for visiting! Enjoy your trip!
+Usr : On second thought, I am looking for a train to Cambridge, leaving Biships Stortford.
+
+GT  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}, 'train': {'departure': 'bishops stortford', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'stars': '4', 'type': 'hotel'}, 'train': {'departure': 'bishops stortford', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : On what day are you wanting to travel?
+Usr : I would like to leave on Thursday after 12:00.
+
+GT  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}, 'train': {'day': 'thursday', 'departure': 'bishops stortford', 'destination': 'cambridge', 'leaveat': '12:00'}}
+PR  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'stars': '4', 'type': 'hotel'}, 'train': {'day': 'thursday', 'departure': 'bishops stortford', 'destination': 'cambridge', 'leaveat': '12:00'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : TR0141 would suit your needs. Can I book you a ticket?
+Usr : yes book for 1
+
+GT  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'hotel'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'bishops stortford', 'destination': 'cambridge', 'leaveat': '12:00'}}
+PR  : {'hotel': {'area': 'west', 'day': 'thursday', 'people': '1', 'stay': '4', 'name': 'huntingdon marriott hotel', 'parking': 'yes', 'stars': '4', 'type': 'hotel'}, 'train': {'people': '1', 'day': 'thursday', 'departure': 'bishops stortford', 'destination': 'cambridge', 'leaveat': '12:00'}}
+
+Matched : False
+
+----------------------

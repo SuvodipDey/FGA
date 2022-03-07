@@ -1,0 +1,72 @@
+Dialogue ID : SNG0805.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi there. Can I get some help finding a hotel or guesthouse please?
+
+GT  : {'hotel': {'type': 'dontcare'}}
+PR  : {'hotel': {'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : Sure thing! What side of town would you prefer? What price range would you like?
+Usr : I need one in the moderate price range. I would like one that doesn't have free parking.
+
+GT  : {'hotel': {'parking': 'no', 'pricerange': 'moderate', 'type': 'dontcare'}}
+PR  : {'hotel': {'parking': 'no', 'pricerange': 'moderate', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : There are 3 guesthouses and a hotel.  Do you have a star rating that you enjoy staying at?
+Usr : No not in particular.
+
+GT  : {'hotel': {'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'dontcare'}}
+PR  : {'hotel': {'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'hotel'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I have four hotels. Do you know the area you would like to stay?
+Usr : I'd prefer a guesthouse in the north, please.
+
+GT  : {'hotel': {'area': 'north', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : I've got two options. The Alpha-Milton and the Avalon. Would you like me to book a room at either one?
+Usr : Yes. The Apha-Milton sounds nice. Try that one, please.
+
+GT  : {'hotel': {'area': 'north', 'name': 'alpha milton guest house', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'name': 'alpha milton guest house', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I'd be happy to make your reservation for you. When would you like to arrive and how many are in your party?
+Usr : There are 3 of us and we're arriving on Thursday. We'd like to stay for 4 nights if possible.
+
+GT  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '3', 'stay': '4', 'name': 'alpha milton guest house', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '3', 'stay': '4', 'name': 'alpha milton guest house', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Your reservation is all set. Your reference number is 89S3ZAGS.
+Usr : Thank you. That's all I need today.
+
+GT  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '3', 'stay': '4', 'name': 'alpha milton guest house', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'north', 'day': 'thursday', 'people': '3', 'stay': '4', 'name': 'alpha milton guest house', 'parking': 'no', 'pricerange': 'moderate', 'stars': 'dontcare', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------

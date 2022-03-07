@@ -1,0 +1,92 @@
+Dialogue ID : PMUL3495.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Can you help me find a college to visit?
+
+GT  : {'attraction': {'type': 'college'}}
+PR  : {'attraction': {'type': 'college'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : We have 18 colleges. Is there a certain area you would like to visit?
+Usr : Not really, what do you suggest? Can I have the address, postcode, and entrance fee?
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'college'}}
+PR  : {'attraction': {'type': 'college'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Sue i suggest Christ's College that is in the center, has a postcode of cb23bu, an address of saint andrew's street and the entrance is free of cost.
+Usr : Thank you. can you also find me a mediterranean restaurant?
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : what is our price range?
+Usr : Price is no object, you usually only get to place like cambridge once in your life.  I will go with what you recommend, I just need their address.
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'pricerange': 'dontcare'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'pricerange': 'dontcare'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I would recommend la mimosa at Thompsons Lane Fen Ditton. Would you like me to book it for you?
+Usr : Is that in the centre area?
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : yes it is in the centre
+Usr : What is the address?
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : The address is Thompsons Lane Fen Ditton
+Usr : Can you book a taxi for me to get from Christ's College to La Mimosa? I'll need to leave Christ's College by 02:30. Please give contact number and car type.
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}, 'taxi': {'departure': 'christ college', 'destination': 'la mimosa', 'leaveat': '02:30'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}, 'taxi': {'departure': 'christ college', 'destination': 'la mimosa', 'leaveat': '02:30'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Your booking is complete. The booked car type is a white Tesla. The contact number is 07844314438.
+Usr : Thank you for your help!
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}, 'taxi': {'departure': 'christ college', 'destination': 'la mimosa', 'leaveat': '02:30'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}, 'taxi': {'departure': 'christ college', 'destination': 'la mimosa', 'leaveat': '02:30'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : You are welcome.  Is there anything else you will be needing today?
+Usr : That is all for today, thanks for the help!
+
+GT  : {'attraction': {'area': 'dontcare', 'name': 'christ college', 'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}, 'taxi': {'departure': 'christ college', 'destination': 'la mimosa', 'leaveat': '02:30'}}
+PR  : {'attraction': {'type': 'college'}, 'restaurant': {'food': 'mediterranean', 'name': 'la mimosa', 'pricerange': 'dontcare'}, 'taxi': {'departure': 'christ college', 'destination': 'la mimosa', 'leaveat': '02:30'}}
+
+Matched : False
+
+----------------------

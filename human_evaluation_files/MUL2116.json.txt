@@ -1,0 +1,72 @@
+Dialogue ID : MUL2116.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Yes, can you tell me information on Cambridge lodgings?  We are looking for free wifi and a nice guesthouse.
+
+GT  : {'hotel': {'internet': 'yes', 'type': 'guest house'}}
+PR  : {'hotel': {'internet': 'yes', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Sure. What area and price range are you looking for?
+Usr : I don't really care about area or price range, the most important thing for me is free wifi in a guesthouse that has free parking.
+
+GT  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'type': 'guest house'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I've got over 20 guesthouses that will work with those requirements.  Would you like me to book a moderately priced 4 star?
+Usr : As long as it has free wifi and parking then yes.
+
+GT  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'dontcare', 'internet': 'yes', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I would recommend the Acorn Guest House on the north side of town.  It has 4-stars.  Should I book this?
+Usr : Yes. Please book it for 8 people for 5 nights starting from sunday.
+
+GT  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}}
+PR  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Ok. You're all set for the Acorn Guest House on Sunday. The reference number is RLSL7BTI. Can I help you with anything else?
+Usr : Can I get a train from Leicester to Cambridge? Should be on that same Sunday and I'd need it to arrive by 20:30.
+
+GT  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '20:30', 'day': 'sunday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '20:30', 'day': 'sunday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : There are several trains you can choose from. Train TR1079 leaves at 09:09 and arrives at 10:54. Would you like to book it or try another?
+Usr : You can book that one. I need the booking for 8 people. Could I get a reference number?
+
+GT  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '20:30', 'people': '8', 'day': 'sunday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '20:30', 'people': '8', 'day': 'sunday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I've booked your tickets.  The reference number is 3ENDA3IC.
+Usr : Great!  Thanks for your help today.  I'm all set.  Goodbye.
+
+GT  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'dontcare', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '20:30', 'people': '8', 'day': 'sunday', 'departure': 'leicester', 'destination': 'cambridge'}}
+PR  : {'hotel': {'area': 'dontcare', 'day': 'sunday', 'people': '8', 'stay': '5', 'internet': 'yes', 'name': 'acorn guest house', 'parking': 'yes', 'pricerange': 'moderate', 'stars': '4', 'type': 'guest house'}, 'train': {'arriveby': '20:30', 'people': '8', 'day': 'sunday', 'departure': 'leicester', 'destination': 'cambridge'}}
+
+Matched : False
+
+----------------------

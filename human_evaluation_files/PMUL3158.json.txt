@@ -1,0 +1,73 @@
+Dialogue ID : PMUL3158.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I want to find a place in town to visit called Jesus Green Outdoor Pool.
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : Hello. Jesus Green Outdoor Pool is in the north area between Victoria Rd. and the River. Call 01223302579 to find more about costs.
+Usr : Sounds good! Do you happen to know what attraction type it is?
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : It is a swimmingpool
+Usr : now I need a chinese place to eat
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}, 'restaurant': {'food': 'chinese'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}, 'restaurant': {'food': 'chinese'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : There are a wide variety of Chinese restaurants in the city. Do you have a preference on where it is or the price range?
+Usr : I would like an expensive restaurant.
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}, 'restaurant': {'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}, 'restaurant': {'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I have 9 options for you, any particular area of town you want to dine in?
+Usr : Yes it needs to be in the centre. Can you book me a table for 6 people at 17:45 on Friday?
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}, 'restaurant': {'area': 'centre', 'food': 'chinese', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}, 'restaurant': {'area': 'centre', 'day': 'friday', 'people': '6', 'time': '17:45', 'food': 'chinese', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : How does Ugly Duckling sound?
+Usr : Yes.  Please book it.
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}, 'restaurant': {'area': 'centre', 'day': 'friday', 'people': '6', 'time': '17:45', 'food': 'chinese', 'name': 'ugly duckling', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}, 'restaurant': {'area': 'centre', 'day': 'friday', 'people': '6', 'time': '17:45', 'food': 'chinese', 'name': 'ugly duckling', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Booking was successful. The table will be reserved for 15 minutes.
+Reference number is : FUCDLRG3.
+Usr : Thanks, that's all for today. Goodbye.
+
+GT  : {'attraction': {'name': 'jesus green outdoor pool', 'type': 'swimming pool'}, 'restaurant': {'area': 'centre', 'day': 'friday', 'people': '6', 'time': '17:45', 'food': 'chinese', 'name': 'ugly duckling', 'pricerange': 'expensive'}}
+PR  : {'attraction': {'name': 'jesus green outdoor pool'}, 'restaurant': {'area': 'centre', 'day': 'friday', 'people': '6', 'time': '17:45', 'food': 'chinese', 'name': 'ugly duckling', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,52 @@
+Dialogue ID : SNG0590.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'd like to find some expensive Mexican cuisine.
+
+GT  : {'restaurant': {'food': 'mexican', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'food': 'mexican', 'pricerange': 'expensive'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : chiquito restaurant bar is an expensive restaurant in the south. Would you like me to book it?
+Usr : Sure that would be great.
+
+GT  : {'restaurant': {'area': 'south', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Okay, is there a particular day and time that would work for you?
+Usr : Yes I would like it made for Wednesday for 7 people at 18:30 please.
+
+GT  : {'restaurant': {'area': 'south', 'day': 'wednesday', 'people': '7', 'time': '18:30', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'day': 'wednesday', 'people': '7', 'time': '18:30', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Booked! Your table will be held for 15 minutes. Reference number is C3HMWGUS.
+Usr : That's great. Thank you very much.
+
+GT  : {'restaurant': {'area': 'south', 'day': 'wednesday', 'people': '7', 'time': '18:30', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'day': 'wednesday', 'people': '7', 'time': '18:30', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Is there anything else I can do for you?
+Usr : That's it for now. Thanks.
+
+GT  : {'restaurant': {'area': 'south', 'day': 'wednesday', 'people': '7', 'time': '18:30', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'day': 'wednesday', 'people': '7', 'time': '18:30', 'food': 'mexican', 'name': 'chiquito restaurant bar', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------

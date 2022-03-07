@@ -1,0 +1,72 @@
+Dialogue ID : MUL1455.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I am traveling to Cambridge and need help finding a train.
+
+GT  : {'train': {'destination': 'cambridge'}}
+PR  : {'train': {'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : When would you like to travel and where are you coming from?
+Usr : I would like to leave on Tuesday sometime after 13:00.
+
+GT  : {'train': {'day': 'tuesday', 'destination': 'cambridge', 'leaveat': '13:00'}}
+PR  : {'train': {'day': 'tuesday', 'destination': 'cambridge', 'leaveat': '13:00'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I have a train leaving London's Kings Cross station every 2 hours, starting at 13:17. The trip is 51 minutes long and costs 23.60 pounds.
+Usr : I'll actually be departing from Leicester. What do you have available from there?
+
+GT  : {'train': {'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+PR  : {'train': {'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : TR4032 will depart at 13:09 if that works for you?
+Usr : Yes I need it booked for 4 people.
+
+GT  : {'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+PR  : {'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : OK, the booking was successful. The total fee is 151.19 GBP, payable at the station. Your reference number is H02HFBMH.
+Usr : I am also looking for a moderately priced chinese  restaurant located in the north.
+
+GT  : {'restaurant': {'area': 'north', 'food': 'chinese', 'pricerange': 'moderate'}, 'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+PR  : {'restaurant': {'area': 'north', 'food': 'chinese', 'pricerange': 'moderate'}, 'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : Golden wok is in the moderate price range and in the north area would you like me to book it for you?
+Usr : Can I get the address and phone number please?
+
+GT  : {'restaurant': {'area': 'north', 'food': 'chinese', 'pricerange': 'moderate'}, 'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+PR  : {'restaurant': {'area': 'north', 'food': 'chinese', 'name': 'golden wok', 'pricerange': 'moderate'}, 'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Of course - the address is 191 Histon Road Chesterton cb43hl and the phone number is 01223350688
+Usr : Thank you, that is everything that i need.
+
+GT  : {'restaurant': {'area': 'north', 'food': 'chinese', 'pricerange': 'moderate'}, 'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+PR  : {'restaurant': {'area': 'north', 'food': 'chinese', 'name': 'golden wok', 'pricerange': 'moderate'}, 'train': {'people': '4', 'day': 'tuesday', 'departure': 'leicester', 'destination': 'cambridge', 'leaveat': '13:00'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,82 @@
+Dialogue ID : PMUL2503.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I'm  places to go, can you point me in the right direction?
+
+GT  : {{}}
+PR  : {'attraction': {'area': 'west'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : what type of attraction do you want?
+Usr : I want to go to a museum.
+
+GT  : {'attraction': {'type': 'museum'}}
+PR  : {'attraction': {'area': 'west', 'type': 'museum'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : There are several what area are you wanting to go to?
+Usr : Any place in town is fine for me. Do you have any recommendations?
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}}
+PR  : {'attraction': {'area': 'west', 'type': 'museum'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : I suggest the byard art museum located in the south.
+Usr : That sounds great.  What is the entrance fee?
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}}
+PR  : {'attraction': {'area': 'west', 'name': 'byard art', 'type': 'museum'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Their admission is free.  Is there anything else you need to know?
+Usr : Yes please. I need an expensive guesthouse that has free parking please.
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'parking': 'yes', 'pricerange': 'expensive', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'west', 'name': 'byard art', 'type': 'museum'}, 'hotel': {'parking': 'yes', 'pricerange': 'expensive', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : I'm sorry I don't have anything in that category. Can we check something else?
+Usr : Do you have a guesthouse in the moderate price range with free parking?
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'parking': 'yes', 'pricerange': 'moderate', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'west', 'name': 'byard art', 'type': 'museum'}, 'hotel': {'parking': 'yes', 'pricerange': 'moderate', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : I have several in the South closer to the museum, and some in the North. Do you have a preference?
+Usr : No I don't. Can you pick the best one please. I need a room for 2 and 4 nights starting from Wednesday.
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'area': 'dontcare', 'day': 'wednesday', 'people': '2', 'stay': '4', 'parking': 'yes', 'pricerange': 'moderate', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'west', 'name': 'byard art', 'type': 'museum'}, 'hotel': {'day': 'wednesday', 'people': '2', 'stay': '4', 'parking': 'yes', 'pricerange': 'moderate', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : You are booked at the Acorn Guest House at 154 Chesterton Road.  Reference number is : XXRWC1JW.  Can I help with anything else today?
+Usr : That'll be all thanks so much!
+
+GT  : {'attraction': {'area': 'dontcare', 'type': 'museum'}, 'hotel': {'area': 'dontcare', 'day': 'wednesday', 'people': '2', 'stay': '4', 'parking': 'yes', 'pricerange': 'moderate', 'type': 'guest house'}}
+PR  : {'attraction': {'area': 'west', 'name': 'byard art', 'type': 'museum'}, 'hotel': {'day': 'wednesday', 'people': '2', 'stay': '4', 'parking': 'yes', 'pricerange': 'moderate', 'type': 'guest house'}}
+
+Matched : False
+
+----------------------

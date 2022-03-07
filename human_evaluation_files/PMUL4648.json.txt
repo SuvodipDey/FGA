@@ -1,0 +1,102 @@
+Dialogue ID : PMUL4648.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Please find a restaurant called Nusha.
+
+GT  : {{}}
+PR  : {'restaurant': {'name': 'nusha'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : I don't seem to be finding anything called Nusha.  What type of food does the restaurant serve?
+Usr : I am not sure of the type of food but could you please check again and see if you can find it? Thank you.
+
+GT  : {{}}
+PR  : {'restaurant': {'name': 'nusha'}}
+
+Matched : False
+
+----------------------
+Turn: 2
+Sys : Could you double check that you've spelled the name correctly? The closest I can find is Nandos.
+Usr : It's not a restaurant, it's an attraction. Nusha.
+
+GT  : {'attraction': {'name': 'nusha'}}
+PR  : {'restaurant': {'name': 'nusha'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : oh its okay. that is an entertainment type located in the south at unit g6, cambridge leisure park, clifton road. do you need their phone number?
+Usr : No, but please confirm their address again and their postcode.
+
+GT  : {'attraction': {'name': 'nusha'}}
+PR  : {'restaurant': {'name': 'nusha'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : Their address is Unit g6, Cambridge Leisure Park, Clifton road. The postcode is CB17DY. Is their anything else I can do for you?
+Usr : I want Indian food in the center area.
+
+GT  : {'attraction': {'name': 'nusha'}, 'restaurant': {'area': 'centre', 'food': 'indian'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : There are nine Indian restaurants in centre what price range do you want?
+Usr : I am looking for expensive Indian food.
+
+GT  : {'attraction': {'name': 'nusha'}, 'restaurant': {'area': 'centre', 'food': 'indian', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : saffron brasserie is an expensive restaurant that serves italian food
+Usr : Can I get the address for saffron brasserie?
+
+GT  : {'attraction': {'name': 'nusha'}, 'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : the address is Hills Road City Centre
+Usr : Can I clarify that it was Indian food and not Italian food please?
+
+GT  : {'attraction': {'name': 'nusha'}, 'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 8
+Sys : Yes, saffron brasserie is Indian food.
+Usr : Thank you that is all the information I need at the moment.
+
+GT  : {'attraction': {'name': 'nusha'}, 'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------
+Turn: 9
+Sys : i hope i have been of help
+Usr : You have. Thank you. Goodbye.
+
+GT  : {'attraction': {'name': 'nusha'}, 'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian', 'name': 'saffron brasserie', 'pricerange': 'expensive'}}
+
+Matched : False
+
+----------------------

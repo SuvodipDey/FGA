@@ -1,0 +1,82 @@
+Dialogue ID : PMUL4001.json
+----------------------
+Turn: 0
+Sys :  
+Usr : I am planning a trip in Cambridge
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : Would you like to come by bus, or train?
+Usr : I'm actually looking for a particular attraction called the fitzwilliam museum.
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Yes nice place. Did you need any info on it ?
+Usr : What type of attraction is that?
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : It's a museum. Will that be all?
+Usr : Thanks.  I do actually need help finding a train.  I want to go to London Kings Cross on Monday.
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'day': 'monday', 'destination': 'london kings cross'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'day': 'monday', 'destination': 'london kings cross'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : Okay, and what time would you like to leave?
+Usr : I would like to depart cambridge after 13:30.
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'day': 'monday', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : how many tickets please?
+Usr : I'll need tickets for 4 people. Can I have the reference number please?
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'people': '4', 'day': 'monday', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'people': '4', 'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : Your train booking for 4 on the TR6028 was successful. Your Reference number is : IG9GL7FF. Is there anything else I can help you with?
+Usr : naw i'm good thanks
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'people': '4', 'day': 'monday', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'people': '4', 'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+
+Matched : False
+
+----------------------
+Turn: 7
+Sys : Well, have a great day.
+Usr : Likewise, thanks very much!
+
+GT  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'people': '4', 'day': 'monday', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+PR  : {'attraction': {'name': 'fitzwilliam museum'}, 'train': {'people': '4', 'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': '13:30'}}
+
+Matched : False
+
+----------------------

@@ -1,0 +1,82 @@
+Dialogue ID : PMUL1374.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello! What time does the next train to stevenage depart?
+
+GT  : {'train': {'destination': 'stevenage'}}
+PR  : {'train': {'departure': 'stevenage'}}
+
+Matched : False
+
+----------------------
+Turn: 1
+Sys : There are 70 trains departing for Stevenage, where would you be departing from?
+Usr : That is wrong I am leaving from stevenage and going to cambridge.
+
+GT  : {'train': {'departure': 'stevenage', 'destination': 'cambridge'}}
+PR  : {'train': {'departure': 'stevenage', 'destination': 'cambridge'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : I'd be happy to help with your request, what day will you be leaving and do you have a time preference?
+Usr : I will be leaving Friday after 9:45.
+
+GT  : {'train': {'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+PR  : {'train': {'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : There is a train leaving Stevenage at 9:54 on Friday and arriving at 10:43 to Cambridge. The Train ID is TR2860. Would you like to book it?
+Usr : Yes.  I would like to book it for 5 people.
+
+GT  : {'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+PR  : {'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : I have your tickets booked, the total fee is 64 GBP payable at the station, your reference number is 2TAN5YZ3.
+Usr : Thanks! I'm also looking for places to go in the town centre. Are there any multiple sports attractions?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'multiple sports'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'multiple sports'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+
+Matched : True
+
+----------------------
+Turn: 5
+Sys : I'm sorry but I have not found any matches.
+Usr : Ok, how about a college in the centre?
+
+GT  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+PR  : {'attraction': {'area': 'centre', 'type': 'college'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+
+Matched : True
+
+----------------------
+Turn: 6
+Sys : Christ's college is in the centre of town.
+Usr : Can you provide me with the entrance fee and postcode?
+
+GT  : {'attraction': {'area': 'centre', 'name': 'christ college', 'type': 'college'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'christ college', 'type': 'college'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+
+Matched : True
+
+----------------------
+Turn: 7
+Sys : It's free, and the postcode is cb23bu. Is there anything else I can help you with?
+Usr : awesome no that is all thank you
+
+GT  : {'attraction': {'area': 'centre', 'name': 'christ college', 'type': 'college'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'christ college', 'type': 'college'}, 'train': {'people': '5', 'day': 'friday', 'departure': 'stevenage', 'destination': 'cambridge', 'leaveat': '09:45'}}
+
+Matched : True
+
+----------------------

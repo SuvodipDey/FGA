@@ -1,0 +1,72 @@
+Dialogue ID : MUL1596.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hello! I'd like to eat at an indian restaurant in the centre. Can you help?
+
+GT  : {'restaurant': {'area': 'centre', 'food': 'indian'}}
+PR  : {'restaurant': {'area': 'centre', 'food': 'indian'}}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : I can.  What price range are you looking for?
+Usr : any price range please, need it for monday.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'monday', 'food': 'indian', 'pricerange': 'dontcare'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'monday', 'food': 'indian', 'pricerange': 'dontcare'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Sure! how many people and what time?
+Usr : 1 person at 14:15.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '14:15', 'food': 'indian', 'pricerange': 'dontcare'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '14:15', 'food': 'indian', 'pricerange': 'dontcare'}}
+
+Matched : True
+
+----------------------
+Turn: 3
+Sys : I'm sorry, I haven't found any availability.  Is there a different day or time you could change to??
+Usr : Could you try Monday at 13:15?
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'pricerange': 'dontcare'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'pricerange': 'dontcare'}}
+
+Matched : True
+
+----------------------
+Turn: 4
+Sys : The Curry Garden has availability at that time. Would you like me to book it for you?
+Usr : Yes please, and I am also looking for a train leaving cambridge on tuestday going to london kings cross arriving by 18:45.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'dontcare'}, 'train': {'arriveby': '18:45', 'day': 'tuesday', 'departure': 'cambridge', 'destination': 'london kings cross'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'dontcare'}, 'train': {'arriveby': '18:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : There are 7 trains that match your requests, is there a specific time you want to leave at?
+Usr : No specific time just as long as arrival is by 18:45. Please give me the price options.
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'dontcare'}, 'train': {'arriveby': '18:45', 'day': 'tuesday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': 'dontcare'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'dontcare'}, 'train': {'arriveby': '18:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross'}}
+
+Matched : False
+
+----------------------
+Turn: 6
+Sys : All of the trains arriving by that time cost 23.60 pounds.
+Usr : Thanks for your help!
+
+GT  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'dontcare'}, 'train': {'arriveby': '18:45', 'day': 'tuesday', 'departure': 'cambridge', 'destination': 'london kings cross', 'leaveat': 'dontcare'}}
+PR  : {'restaurant': {'area': 'centre', 'day': 'monday', 'people': '1', 'time': '13:15', 'food': 'indian', 'name': 'curry garden', 'pricerange': 'dontcare'}, 'train': {'arriveby': '18:45', 'day': 'monday', 'departure': 'cambridge', 'destination': 'london kings cross'}}
+
+Matched : False
+
+----------------------

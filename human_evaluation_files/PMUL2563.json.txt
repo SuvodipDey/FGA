@@ -1,0 +1,62 @@
+Dialogue ID : PMUL2563.json
+----------------------
+Turn: 0
+Sys :  
+Usr : Hi, I am traveling to Cambridge and could use some help for sure.  I am so excited to see some local tourist attractions.
+
+GT  : {{}}
+PR  : {}
+
+Matched : True
+
+----------------------
+Turn: 1
+Sys : We have 79 attractions to choose from, anything specific that you would like to tell us to help narrow it down?
+Usr : I'm looking for a hotel called cityroomz.
+
+GT  : {'hotel': {'name': 'cityroomz'}}
+PR  : {'hotel': {'name': 'cityroomz'}}
+
+Matched : True
+
+----------------------
+Turn: 2
+Sys : Cityroomz is a 0-star hotel in the center of town. Its address is Sleeperz Hotel, Station Road.
+Usr : Can you please book a room for 4 people for 2 nights starting on wednesday?
+
+GT  : {'hotel': {'area': 'centre', 'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz', 'stars': '0'}}
+PR  : {'hotel': {'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz'}}
+
+Matched : False
+
+----------------------
+Turn: 3
+Sys : Booking was successful.Reference number is : WGUYAGN2 anything else i can help?
+Usr : Thanks. I am also looking for places to go in town. Perhaps an attraction in the city centre.
+
+GT  : {'attraction': {'area': 'centre'}, 'hotel': {'area': 'centre', 'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz', 'stars': '0'}}
+PR  : {'attraction': {'area': 'centre'}, 'hotel': {'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz'}}
+
+Matched : False
+
+----------------------
+Turn: 4
+Sys : I have the all saints church located at jesus lane and it's free entrance.
+Usr : That sounds perfect. Thanks!
+
+GT  : {'attraction': {'area': 'centre'}, 'hotel': {'area': 'centre', 'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz', 'stars': '0'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'all saints church'}, 'hotel': {'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz'}}
+
+Matched : False
+
+----------------------
+Turn: 5
+Sys : Can I help you with anything else?
+Usr : No thanks. That's all I need. Goodbye.
+
+GT  : {'attraction': {'area': 'centre'}, 'hotel': {'area': 'centre', 'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz', 'stars': '0'}}
+PR  : {'attraction': {'area': 'centre', 'name': 'all saints church'}, 'hotel': {'day': 'wednesday', 'people': '4', 'stay': '2', 'name': 'cityroomz'}}
+
+Matched : False
+
+----------------------
