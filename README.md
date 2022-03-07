@@ -7,8 +7,8 @@ Dependencies: Download MultiWOZ 2.1 dataset from https://github.com/budzianowski
 
 1. Trade and SOM-DST: Run compute_accuracy_trade_somdst.py
 
-2. Hi-DST: Run compute_accuracy_hi-dst
+2. Hi-DST: Run compute_accuracy_hi-dst.py
 
-3. Trippy: Run compute_accuracy_trippy
+3. Trippy: Run compute_accuracy_trippy.py
 
 Note: We have provided the inference result of all the four model in their respective directories. One can also generate the same by running the original codes.
